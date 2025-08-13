@@ -1,0 +1,52 @@
+This folder contains product images for the Outwest Outfitters e-commerce website.
+
+IMPORTANT: Replace this placeholder.txt file with actual product images.
+
+Expected image files for TENTS category:
+- alpine-peak-4person-tent.jpg
+- alpine-peak-4person-tent-2.jpg
+- alpine-peak-4person-tent-3.jpg
+- wilderness-backpacking-tent-2p.jpg
+- wilderness-backpacking-tent-2p-2.jpg
+- family-base-camp-8person-tent.jpg
+- family-base-camp-8person-tent-2.jpg
+- storm-shield-2person-4season-tent.jpg
+- quick-setup-popup-tent-3p.jpg
+
+Expected image files for SLEEPING BAGS category:
+- arctic-comfort-down-sleeping-bag.jpg
+- arctic-comfort-down-sleeping-bag-2.jpg
+- trail-lightweight-sleeping-pad.jpg
+- summer-breeze-synthetic-sleeping-bag.jpg
+- deluxe-self-inflating-sleeping-pad.jpg
+- ultralight-down-sleeping-bag.jpg
+
+Expected image files for BACKPACKS category:
+- summit-explorer-65l-backpack.jpg
+- summit-explorer-65l-backpack-2.jpg
+- day-hiker-30l-backpack.jpg
+- ultralight-40l-trekking-pack.jpg
+- adventure-duffel-bag-90l.jpg
+- hydration-pack-15l.jpg
+
+Expected image files for CAMP KITCHEN category:
+- alpine-chef-camping-stove-system.jpg
+- alpine-chef-camping-stove-system-2.jpg
+- compact-titanium-cookset.jpg
+- portable-water-filter-system.jpg
+- insulated-food-storage-container-set.jpg
+- multi-tool-camping-utensil-set.jpg
+
+Expected image files for CAMP FURNITURE category:
+- comfort-plus-camping-chair.jpg
+- comfort-plus-camping-chair-2.jpg
+- lightweight-folding-table.jpg
+- portable-hammock-with-stand.jpg
+- compact-camping-cot.jpg
+- inflatable-pillow-deluxe.jpg
+
+Image specifications:
+- Format: JPG, PNG, or WebP
+- Size: 800x600px (16:9) for main images
+- Quality: 80-90% for web optimization
+- File size: Under 500KB for main images

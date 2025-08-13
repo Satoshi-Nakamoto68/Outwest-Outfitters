@@ -1,0 +1,651 @@
+export interface Product {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  originalPrice?: number;
+  image: string;
+  images: string[];
+  description: string;
+  specifications: { [key: string]: string };
+  rating: number;
+  reviewCount: number;
+  inStock: boolean;
+  featured?: boolean;
+  brand: string;
+}
+
+export const products: Product[] = [
+  // TENTS
+  {
+    id: "tent-001",
+    name: "Alpine Peak 4-Person Dome Tent fgsd",
+    category: "Tents",
+    price: 299.99,
+    originalPrice: 349.99,
+    image: "/images/products/tents/Alpine-Dome-Tent5.jpg",
+    images: [
+      "/images/products/tents/Alpine-Dome-Tent1.jpg",
+      "/images/products/tents/Alpine-Dome-Tent2.jpg",
+      "/images/products/tents/Alpine-Dome-Tent3.jpg",
+      "/images/products/tents/Alpine-Dome-Tent4.jpg",
+      "/images/products/tents/Alpine-Dome-Tent5.jpg",
+      "/images/products/tents/Alpine-Dome-Tent6.jpg",
+    ],
+    description: "Built for serious outdoor enthusiasts, the Alpine Peak offers exceptional weather protection and spacious interior design. Features dual vestibules for gear storage and advanced ventilation system to prevent condensation.",
+    specifications: {
+      "Capacity": "4 People",
+      "Weight": "8.2 lbs",
+      "Floor Area": "55 sq ft",
+      "Peak Height": "5'4\"",
+      "Waterproof Rating": "3000mm",
+      "Season": "3-Season",
+      "Setup Time": "15 minutes"
+    },
+    rating: 5,
+    reviewCount: 127,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Pro"
+  },
+  {
+    id: "tent-002",
+    name: "Wilderness Backpacking Tent 2P",
+    category: "Tents",
+    price: 199.99,
+    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+    ],
+    description: "Ultra-lightweight backpacking tent designed for minimalist adventures. Perfect balance of weight, durability, and weather protection for serious backpackers.",
+    specifications: {
+      "Capacity": "2 People",
+      "Weight": "3.1 lbs",
+      "Floor Area": "28 sq ft",
+      "Peak Height": "3'8\"",
+      "Waterproof Rating": "2000mm",
+      "Season": "3-Season",
+      "Setup Time": "8 minutes"
+    },
+    rating: 4.6,
+    reviewCount: 89,
+    inStock: true,
+    brand: "Outwest Lite"
+  },
+  {
+    id: "tent-003",
+    name: "Family Base Camp 8-Person Tent",
+    category: "Tents",
+    price: 449.99,
+    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+    ],
+    description: "Spacious family tent with room dividers and multiple entrances. Perfect for car camping and extended stays with premium comfort features.",
+    specifications: {
+      "Capacity": "8 People",
+      "Weight": "18.5 lbs",
+      "Floor Area": "140 sq ft",
+      "Peak Height": "6'6\"",
+      "Waterproof Rating": "5000mm",
+      "Season": "3-Season",
+      "Setup Time": "25 minutes"
+    },
+    rating: 4.7,
+    reviewCount: 156,
+    inStock: true,
+    brand: "Outwest Family"
+  },
+  {
+    id: "tent-004",
+    name: "Storm Shield 2-Person 4-Season Tent",
+    category: "Tents",
+    price: 599.99,
+    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"
+    ],
+    description: "Expedition-grade 4-season tent built to withstand harsh alpine conditions. Features reinforced fabric and geodesic design for maximum stability.",
+    specifications: {
+      "Capacity": "2 People",
+      "Weight": "6.8 lbs",
+      "Floor Area": "30 sq ft",
+      "Peak Height": "3'10\"",
+      "Waterproof Rating": "8000mm",
+      "Season": "4-Season",
+      "Setup Time": "12 minutes"
+    },
+    rating: 5,
+    reviewCount: 73,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Extreme"
+  },
+
+  // SLEEPING BAGS & PADS
+  {
+    id: "sleep-001",
+    name: "Arctic Comfort Down Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 249.99,
+    originalPrice: 299.99,
+    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+      "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg"
+    ],
+    description: "Premium 650-fill down sleeping bag rated for temperatures down to 20°F. Features water-resistant shell and anti-snag zipper system.",
+    specifications: {
+      "Temperature Rating": "20°F",
+      "Fill Type": "650 Fill Down",
+      "Weight": "2.8 lbs",
+      "Length": "Regular (6'0\")",
+      "Stuff Sack": "8\" x 16\"",
+      "Shell Material": "Ripstop Nylon"
+    },
+    rating: 4.8,
+    reviewCount: 203,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Pro"
+  },
+  {
+    id: "sleep-002",
+    name: "Trail Lightweight Sleeping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 89.99,
+    image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg",
+    images: [
+      "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg"
+    ],
+    description: "Self-inflating sleeping pad with superior insulation and comfort. Perfect for backpacking with minimal weight penalty.",
+    specifications: {
+      "R-Value": "4.2",
+      "Weight": "1.2 lbs",
+      "Dimensions": "72\" x 20\" x 2.5\"",
+      "Packed Size": "4\" x 9\"",
+      "Material": "75D Polyester"
+    },
+    rating: 4.5,
+    reviewCount: 145,
+    inStock: true,
+    brand: "Outwest Lite"
+  },
+  {
+    id: "sleep-003",
+    name: "Summer Breeze Synthetic Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 129.99,
+    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+    ],
+    description: "Versatile synthetic sleeping bag perfect for warm weather camping. Quick-drying and machine washable for easy maintenance.",
+    specifications: {
+      "Temperature Rating": "40°F",
+      "Fill Type": "Synthetic",
+      "Weight": "3.2 lbs",
+      "Length": "Regular (6'0\")",
+      "Stuff Sack": "10\" x 18\"",
+      "Shell Material": "Polyester Taffeta"
+    },
+    rating: 4.3,
+    reviewCount: 87,
+    inStock: true,
+    brand: "Outwest Classic"
+  },
+  {
+    id: "sleep-004",
+    name: "Deluxe Self-Inflating Sleeping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 159.99,
+    image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg",
+    images: [
+      "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg"
+    ],
+    description: "Premium self-inflating pad with extra thickness for ultimate comfort. Features built-in pillow and repair kit included.",
+    specifications: {
+      "R-Value": "6.5",
+      "Weight": "2.8 lbs",
+      "Dimensions": "72\" x 25\" x 4\"",
+      "Packed Size": "6\" x 12\"",
+      "Material": "75D Brushed Polyester"
+    },
+    rating: 4.7,
+    reviewCount: 112,
+    inStock: true,
+    brand: "Outwest Pro"
+  },
+
+  // BACKPACKS & BAGS
+  {
+    id: "pack-001",
+    name: "Summit Explorer 65L Backpack",
+    category: "Backpacks & Bags",
+    price: 199.99,
+    originalPrice: 249.99,
+    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    images: [
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+    ],
+    description: "Professional-grade 65L backpack designed for multi-day adventures. Features adjustable torso length, multiple access points, and integrated rain cover.",
+    specifications: {
+      "Capacity": "65L",
+      "Weight": "4.2 lbs",
+      "Torso Range": "16\"-21\"",
+      "Dimensions": "30\" x 14\" x 12\"",
+      "Material": "420D Ripstop Nylon",
+      "Hydration Compatible": "Yes"
+    },
+    rating: 4.9,
+    reviewCount: 234,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Pro"
+  },
+  {
+    id: "pack-002",
+    name: "Day Hiker 30L Backpack",
+    category: "Backpacks & Bags",
+    price: 89.99,
+    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+    ],
+    description: "Lightweight day pack perfect for hiking and daily adventures. Features external gear loops and side water bottle pockets.",
+    specifications: {
+      "Capacity": "30L",
+      "Weight": "2.1 lbs",
+      "Dimensions": "20\" x 12\" x 8\"",
+      "Material": "210D Nylon",
+      "Hydration Compatible": "Yes",
+      "Pockets": "7 Total"
+    },
+    rating: 4.4,
+    reviewCount: 156,
+    inStock: true,
+    brand: "Outwest Lite"
+  },
+  {
+    id: "pack-003",
+    name: "Ultralight 40L Trekking Pack",
+    category: "Backpacks & Bags",
+    price: 149.99,
+    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    images: [
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+    ],
+    description: "Minimalist backpack for weight-conscious hikers. Streamlined design without sacrificing essential features.",
+    specifications: {
+      "Capacity": "40L",
+      "Weight": "1.8 lbs",
+      "Torso Range": "15\"-20\"",
+      "Dimensions": "26\" x 12\" x 10\"",
+      "Material": "70D Ripstop Nylon",
+      "Frame": "Removable"
+    },
+    rating: 4.6,
+    reviewCount: 98,
+    inStock: true,
+    brand: "Outwest Lite"
+  },
+  {
+    id: "pack-004",
+    name: "Adventure Duffel Bag 90L",
+    category: "Backpacks & Bags",
+    price: 119.99,
+    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+    ],
+    description: "Rugged duffel bag perfect for base camp storage and travel. Converts to backpack with removable shoulder straps.",
+    specifications: {
+      "Capacity": "90L",
+      "Weight": "3.5 lbs",
+      "Dimensions": "30\" x 15\" x 15\"",
+      "Material": "840D Ballistic Nylon",
+      "Waterproof": "Yes",
+      "Handles": "4 Carry Options"
+    },
+    rating: 4.5,
+    reviewCount: 67,
+    inStock: true,
+    brand: "Outwest Pro"
+  },
+
+  // CAMP KITCHEN
+  {
+    id: "kitchen-001",
+    name: "Alpine Chef Camping Stove System",
+    category: "Camp Kitchen",
+    price: 149.99,
+    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+    ],
+    description: "Complete cooking system with integrated pot, efficient burner, and piezo ignition. Boils water in under 3 minutes.",
+    specifications: {
+      "Fuel Type": "Isobutane",
+      "Boil Time": "2:45 (1L water)",
+      "Weight": "1.1 lbs",
+      "BTU": "11,000",
+      "Pot Capacity": "1.7L",
+      "Ignition": "Piezo"
+    },
+    rating: 4.8,
+    reviewCount: 189,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Pro"
+  },
+  {
+    id: "kitchen-002",
+    name: "Compact Titanium Cookset",
+    category: "Camp Kitchen",
+    price: 89.99,
+    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"
+    ],
+    description: "Ultra-lightweight titanium cookset perfect for backpacking. Includes pot, pan, and collapsible utensils.",
+    specifications: {
+      "Material": "Titanium",
+      "Weight": "8.2 oz",
+      "Pot Capacity": "1.3L",
+      "Pan Diameter": "7.5\"",
+      "Pieces": "5 Total",
+      "Non-stick": "Yes"
+    },
+    rating: 4.6,
+    reviewCount: 123,
+    inStock: true,
+    brand: "Outwest Lite"
+  },
+  {
+    id: "kitchen-003",
+    name: "Portable Water Filter System",
+    category: "Camp Kitchen",
+    price: 79.99,
+    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    images: [
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+    ],
+    description: "Advanced water filtration system removes 99.9% of bacteria and protozoa. Lightweight and easy to use in the field.",
+    specifications: {
+      "Filter Type": "Hollow Fiber",
+      "Flow Rate": "1.75L/min",
+      "Weight": "5 oz",
+      "Capacity": "4000L lifetime",
+      "Removes": "Bacteria, Protozoa, Particles",
+      "Backflushable": "Yes"
+    },
+    rating: 4.7,
+    reviewCount: 267,
+    inStock: true,
+    brand: "Outwest Pure"
+  },
+  {
+    id: "kitchen-004",
+    name: "Insulated Food Storage Container Set",
+    category: "Camp Kitchen",
+    price: 59.99,
+    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"
+    ],
+    description: "Set of 3 vacuum-insulated containers keeps food hot or cold for hours. Leak-proof design perfect for outdoor dining.",
+    specifications: {
+      "Insulation": "Double-wall Vacuum",
+      "Capacity": "16oz, 24oz, 32oz",
+      "Material": "Stainless Steel",
+      "Hot Retention": "12+ hours",
+      "Cold Retention": "24+ hours",
+      "Leak Proof": "Yes"
+    },
+    rating: 4.4,
+    reviewCount: 98,
+    inStock: true,
+    brand: "Outwest Classic"
+  },
+
+  // CAMP FURNITURE
+  {
+    id: "furniture-001",
+    name: "Comfort Plus Camping Chair",
+    category: "Camp Furniture",
+    price: 79.99,
+    originalPrice: 99.99,
+    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+    ],
+    description: "Ergonomic camping chair with extra padding and lumbar support. Features cup holder, side pocket, and carry bag.",
+    specifications: {
+      "Weight Capacity": "300 lbs",
+      "Weight": "5.2 lbs",
+      "Dimensions": "24\" x 24\" x 36\"",
+      "Seat Height": "17\"",
+      "Material": "600D Oxford Fabric",
+      "Frame": "Steel"
+    },
+    rating: 4.6,
+    reviewCount: 178,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "furniture-002",
+    name: "Lightweight Folding Table",
+    category: "Camp Furniture",
+    price: 89.99,
+    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg"
+    ],
+    description: "Compact aluminum folding table perfect for cooking and dining. Weather-resistant surface with adjustable height legs.",
+    specifications: {
+      "Weight Capacity": "70 lbs",
+      "Weight": "4.8 lbs",
+      "Dimensions": "24\" x 16\" x 26\"",
+      "Folded Size": "24\" x 16\" x 3\"",
+      "Material": "Aluminum",
+      "Height Adjustable": "Yes"
+    },
+    rating: 4.5,
+    reviewCount: 134,
+    inStock: true,
+    brand: "Outwest Pro"
+  },
+  {
+    id: "furniture-003",
+    name: "Portable Hammock with Stand",
+    category: "Camp Furniture",
+    price: 129.99,
+    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    images: [
+      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+    ],
+    description: "Complete hammock system with portable steel stand. Perfect for relaxation anywhere without trees.",
+    specifications: {
+      "Weight Capacity": "400 lbs",
+      "Weight": "22 lbs",
+      "Hammock Size": "9' x 4'",
+      "Stand Dimensions": "12' x 4' x 4'",
+      "Material": "Polyester with Steel Frame",
+      "Setup Time": "5 minutes"
+    },
+    rating: 4.7,
+    reviewCount: 89,
+    inStock: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "furniture-004",
+    name: "Compact Camping Cot",
+    category: "Camp Furniture",
+    price: 149.99,
+    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    images: [
+      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg"
+    ],
+    description: "Elevated camping cot keeps you off the ground for better sleep. Quick setup with no assembly required.",
+    specifications: {
+      "Weight Capacity": "350 lbs",
+      "Weight": "8.5 lbs",
+      "Dimensions": "75\" x 28\" x 16\"",
+      "Folded Size": "38\" x 6\" x 6\"",
+      "Material": "Ripstop Fabric with Aluminum Frame",
+      "Setup Time": "30 seconds"
+    },
+    rating: 4.8,
+    reviewCount: 156,
+    inStock: true,
+    brand: "Outwest Pro"
+  },
+
+  // Additional products to reach 40+
+  {
+    id: "tent-005",
+    name: "Quick Setup Pop-Up Tent 3P",
+    category: "Tents",
+    price: 179.99,
+    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    images: ["https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"],
+    description: "Instant setup tent that pops up in seconds. Perfect for festivals and quick camping trips.",
+    specifications: {
+      "Capacity": "3 People",
+      "Weight": "6.5 lbs",
+      "Floor Area": "45 sq ft",
+      "Peak Height": "4'2\"",
+      "Waterproof Rating": "2500mm",
+      "Season": "3-Season",
+      "Setup Time": "30 seconds"
+    },
+    rating: 5,
+    reviewCount: 92,
+    inStock: true,
+    brand: "Outwest Quick"
+  },
+  {
+    id: "sleep-005",
+    name: "Ultralight Down Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 399.99,
+    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    images: ["https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"],
+    description: "Premium 800-fill down sleeping bag for extreme lightweight backpacking. Temperature rated to 0°F.",
+    specifications: {
+      "Temperature Rating": "0°F",
+      "Fill Type": "800 Fill Down",
+      "Weight": "2.1 lbs",
+      "Length": "Regular (6'0\")",
+      "Stuff Sack": "6\" x 12\"",
+      "Shell Material": "10D Nylon"
+    },
+    rating: 5,
+    reviewCount: 67,
+    inStock: true,
+    brand: "Outwest Elite"
+  },
+  {
+    id: "pack-005",
+    name: "Hydration Pack 15L",
+    category: "Backpacks & Bags",
+    price: 69.99,
+    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    images: ["https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"],
+    description: "Lightweight hydration pack with 2L reservoir. Perfect for day hikes and mountain biking.",
+    specifications: {
+      "Capacity": "15L",
+      "Weight": "1.8 lbs",
+      "Hydration": "2L Reservoir Included",
+      "Dimensions": "18\" x 10\" x 7\"",
+      "Material": "210D Ripstop Nylon",
+      "Ventilation": "Air Mesh Back Panel"
+    },
+    rating: 5,
+    reviewCount: 143,
+    inStock: true,
+    brand: "Outwest Active"
+  },
+  {
+    id: "kitchen-005",
+    name: "Multi-Tool Camping Utensil Set",
+    category: "Camp Kitchen",
+    price: 29.99,
+    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    images: ["https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"],
+    description: "Compact utensil set with fork, knife, spoon, bottle opener, and can opener. Made from durable titanium.",
+    specifications: {
+      "Material": "Titanium",
+      "Weight": "2.1 oz",
+      "Pieces": "5 Tools",
+      "Length": "6.5\"",
+      "Dishwasher Safe": "Yes",
+      "Carabiner": "Included"
+    },
+    rating: 5,
+    reviewCount: 234,
+    inStock: true,
+    brand: "Outwest Gear"
+  },
+  {
+    id: "furniture-005",
+    name: "Inflatable Pillow Deluxe",
+    category: "Camp Furniture",
+    price: 24.99,
+    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    images: ["https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"],
+    description: "Ergonomic inflatable pillow with soft-touch fabric. Packs down to size of smartphone.",
+    specifications: {
+      "Weight": "2.8 oz",
+      "Inflated Size": "16\" x 12\" x 4\"",
+      "Packed Size": "4\" x 2\" x 1\"",
+      "Material": "50D Polyester with TPU",
+      "Inflation": "8-10 breaths",
+      "Washable": "Yes"
+    },
+    rating: 5,
+    reviewCount: 187,
+    inStock: true,
+    brand: "Outwest Comfort"
+  }
+];
+
+export const categories = [
+  "Tents",
+  "Sleeping Bags & Pads", 
+  "Backpacks & Bags",
+  "Camp Kitchen",
+  "Camp Furniture"
+];
+
+export const brands = [
+  "Outwest Pro",
+  "Outwest Lite", 
+  "Outwest Elite",
+  "Outwest Family",
+  "Outwest Extreme",
+  "Outwest Classic",
+  "Outwest Comfort",
+  "Outwest Pure",
+  "Outwest Quick",
+  "Outwest Active",
+  "Outwest Gear"
+];
+
+export const featuredProducts = products.filter(p => p.featured);
+
+export const getProductsByCategory = (category: string) => {
+  return products.filter(p => p.category === category);
+};
+
+export const getProductById = (id: string) => {
+  return products.find(p => p.id === id);
+};
