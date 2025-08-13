@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import {
   Star,
-  ShoppingBag,
-  Heart,
-  Share2,
   ChevronLeft,
   ChevronRight,
   Truck,
@@ -16,7 +13,11 @@ import { getProductById } from "../data/products";
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [quantity, setQuantity] = useState(1);
+
+  // Scroll to top when component mounts or product changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const product = getProductById(id || "");
 
@@ -98,7 +99,8 @@ const ProductDetailPage: React.FC = () => {
               <img
                 src={product.images[selectedImageIndex]}
                 alt={product.name}
-                className="w-full h-96 object-cover rounded-lg"
+                loading="lazy"
+                className="w-full h-96 object-contain bg-gray-100 rounded-lg"
               />
               {/* {product.originalPrice && (
                 <div className="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-md font-semibold">
@@ -154,7 +156,8 @@ const ProductDetailPage: React.FC = () => {
                     <img
                       src={image}
                       alt={`${product.name} ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      className="w-full h-full object-contain bg-gray-100"
                     />
                   </button>
                 ))}

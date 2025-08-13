@@ -23,7 +23,7 @@ const ProductsPage: React.FC = () => {
 
   // Filter and sort products
   const filteredProducts = useMemo(() => {
-    let filtered = products.filter((product) => {
+    const filtered = products.filter((product) => {
       if (filters.category && product.category !== filters.category)
         return false;
       if (filters.brand && product.brand !== filters.brand) return false;

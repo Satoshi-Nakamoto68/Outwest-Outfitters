@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Star, ShoppingBag } from "lucide-react";
+import { Star } from "lucide-react";
 import { Product } from "../types";
 
 interface ProductCardProps {
@@ -9,12 +9,16 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group">
+    <Link
+      to={`/product/${product.id}`}
+      className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group h-full flex flex-col cursor-pointer"
+    >
       <div className="relative overflow-hidden">
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+          loading="lazy"
+          className="w-full h-64 object-contain bg-gray-100 group-hover:scale-110 transition-transform duration-500"
         />
         {/* {product.originalPrice && (
           <div className="absolute top-4 left-4 bg-orange-500 text-white px-2 py-1 rounded-md text-sm font-semibold">
@@ -36,7 +40,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div> */}
       </div>
 
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <div className="flex items-center mb-2">
           <div className="flex items-center">
             {[...Array(5)].map((_, i) => (
@@ -61,11 +65,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
         <p className="text-gray-600 text-sm mb-2">{product.brand}</p>
 
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+        <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-1">
           {product.description}
         </p>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mt-auto">
           <div className="flex items-center space-x-2">
             {/* <span className="text-2xl font-bold text-emerald-600">
               ${product.price}
@@ -76,15 +80,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               </span>
             )} */}
           </div>
-          <Link
-            to={`/product/${product.id}`}
-            className="text-emerald-600 hover:text-emerald-700 font-medium text-sm hover:underline transition-colors duration-200"
-          >
-            View Details
-          </Link>
+          <span className="text-emerald-600 font-medium text-sm">
+            View Details →
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

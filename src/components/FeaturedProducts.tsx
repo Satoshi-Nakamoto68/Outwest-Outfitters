@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Star, ShoppingBag } from "lucide-react";
+import { Star } from "lucide-react";
 import { featuredProducts } from "../data/products";
 
 const FeaturedProducts: React.FC = () => {
@@ -19,16 +19,18 @@ const FeaturedProducts: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {featuredProducts.map((product) => (
-            <div
+            <Link
               key={product.id}
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group"
+              to={`/product/${product.id}`}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer"
             >
               <div className="relative overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                                 <img
+                   src={product.image}
+                   alt={product.name}
+                   loading="lazy"
+                   className="w-full h-64 object-contain bg-gray-100 group-hover:scale-110 transition-transform duration-500"
+                 />
                 {/* {product.originalPrice && (
                   <div className="absolute top-4 left-4 bg-orange-500 text-white px-2 py-1 rounded-md text-sm font-semibold">
                     Sale
@@ -77,15 +79,12 @@ const FeaturedProducts: React.FC = () => {
                       </span>
                     )} */}
                   </div>
-                  <Link
-                    to={`/product/${product.id}`}
-                    className="text-emerald-600 hover:text-emerald-700 font-medium text-sm hover:underline transition-colors duration-200"
-                  >
-                    View Details
-                  </Link>
+                  <span className="text-emerald-600 font-medium text-sm">
+                    View Details →
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

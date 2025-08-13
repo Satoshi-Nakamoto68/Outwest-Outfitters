@@ -68,7 +68,7 @@ export const products: Product[] = [
       "Season": "3-Season",
       "Setup Time": "8 minutes"
     },
-    rating: 4.6,
+    rating: 5,
     reviewCount: 89,
     inStock: true,
     brand: "Outwest Lite"
@@ -93,7 +93,7 @@ export const products: Product[] = [
       "Season": "3-Season",
       "Setup Time": "25 minutes"
     },
-    rating: 4.7,
+    rating: 5,
     reviewCount: 156,
     inStock: true,
     brand: "Outwest Family"
@@ -131,10 +131,15 @@ export const products: Product[] = [
     category: "Sleeping Bags & Pads",
     price: 249.99,
     originalPrice: 299.99,
-    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    image: "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag1.png",
     images: [
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
-      "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg"
+      "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag2.png",
+      "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag1.png",
+      "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag3.png",
+      "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag4.jpg",
+      "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag5.jpg",
+      "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag6.jpg",
+      "/images/products/sleeping-bags/Arctic-Comfort-Sleeping-Bag7.jpg",
     ],
     description: "Premium 650-fill down sleeping bag rated for temperatures down to 20°F. Features water-resistant shell and anti-snag zipper system.",
     specifications: {
@@ -145,7 +150,7 @@ export const products: Product[] = [
       "Stuff Sack": "8\" x 16\"",
       "Shell Material": "Ripstop Nylon"
     },
-    rating: 4.8,
+    rating: 5,
     reviewCount: 203,
     inStock: true,
     featured: true,
@@ -168,7 +173,7 @@ export const products: Product[] = [
       "Packed Size": "4\" x 9\"",
       "Material": "75D Polyester"
     },
-    rating: 4.5,
+    rating: 5,
     reviewCount: 145,
     inStock: true,
     brand: "Outwest Lite"
@@ -191,7 +196,7 @@ export const products: Product[] = [
       "Stuff Sack": "10\" x 18\"",
       "Shell Material": "Polyester Taffeta"
     },
-    rating: 4.3,
+    rating: 5,
     reviewCount: 87,
     inStock: true,
     brand: "Outwest Classic"
@@ -213,7 +218,7 @@ export const products: Product[] = [
       "Packed Size": "6\" x 12\"",
       "Material": "75D Brushed Polyester"
     },
-    rating: 4.7,
+    rating: 5,
     reviewCount: 112,
     inStock: true,
     brand: "Outwest Pro"
@@ -240,7 +245,7 @@ export const products: Product[] = [
       "Material": "420D Ripstop Nylon",
       "Hydration Compatible": "Yes"
     },
-    rating: 4.9,
+    rating: 5,
     reviewCount: 234,
     inStock: true,
     featured: true,
@@ -264,7 +269,7 @@ export const products: Product[] = [
       "Hydration Compatible": "Yes",
       "Pockets": "7 Total"
     },
-    rating: 4.4,
+    rating: 5,
     reviewCount: 156,
     inStock: true,
     brand: "Outwest Lite"
@@ -287,7 +292,7 @@ export const products: Product[] = [
       "Material": "70D Ripstop Nylon",
       "Frame": "Removable"
     },
-    rating: 4.6,
+    rating: 5,
     reviewCount: 98,
     inStock: true,
     brand: "Outwest Lite"
@@ -310,7 +315,7 @@ export const products: Product[] = [
       "Waterproof": "Yes",
       "Handles": "4 Carry Options"
     },
-    rating: 4.5,
+    rating: 5,
     reviewCount: 67,
     inStock: true,
     brand: "Outwest Pro"
@@ -336,7 +341,7 @@ export const products: Product[] = [
       "Pot Capacity": "1.7L",
       "Ignition": "Piezo"
     },
-    rating: 4.8,
+    rating: 5,
     reviewCount: 189,
     inStock: true,
     featured: true,
@@ -360,7 +365,7 @@ export const products: Product[] = [
       "Pieces": "5 Total",
       "Non-stick": "Yes"
     },
-    rating: 4.6,
+    rating: 5,
     reviewCount: 123,
     inStock: true,
     brand: "Outwest Lite"
@@ -383,7 +388,7 @@ export const products: Product[] = [
       "Removes": "Bacteria, Protozoa, Particles",
       "Backflushable": "Yes"
     },
-    rating: 4.7,
+    rating: 5,
     reviewCount: 267,
     inStock: true,
     brand: "Outwest Pure"
@@ -406,7 +411,7 @@ export const products: Product[] = [
       "Cold Retention": "24+ hours",
       "Leak Proof": "Yes"
     },
-    rating: 4.4,
+    rating: 5,
     reviewCount: 98,
     inStock: true,
     brand: "Outwest Classic"
@@ -415,16 +420,21 @@ export const products: Product[] = [
   // CAMP FURNITURE
   {
     id: "furniture-001",
-    name: "Comfort Plus Camping Chair",
+    name: "Comfort Plus Foldable Camping Chair",
     category: "Camp Furniture",
     price: 79.99,
     originalPrice: 99.99,
-    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    image: "/images/products/camp-furniture/Plus-Camping-Chair1.jpg",
     images: [
-      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+      "/images/products/camp-furniture/Plus-Camping-Chair1.jpg",
+      "/images/products/camp-furniture/Plus-Camping-Chair2.jpg",
+      "/images/products/camp-furniture/Plus-Camping-Chair3.jpg",
+      "/images/products/camp-furniture/Plus-Camping-Chair4.jpg",
+      "/images/products/camp-furniture/Plus-Camping-Chair5.jpg",
+      "/images/products/camp-furniture/Plus-Camping-Chair6.jpg",
+      "/images/products/camp-furniture/Plus-Camping-Chair7.jpg",
     ],
-    description: "Ergonomic camping chair with extra padding and lumbar support. Features cup holder, side pocket, and carry bag.",
+    description: "The Comfort Plus foldable camping chair offers a sturdy steel frame and padded seating for enhanced comfort. Easy to carry and quick to set up, it’s ideal for camping trips, outdoor events, fishing, or relaxing in your backyard.",
     specifications: {
       "Weight Capacity": "300 lbs",
       "Weight": "5.2 lbs",
@@ -433,7 +443,7 @@ export const products: Product[] = [
       "Material": "600D Oxford Fabric",
       "Frame": "Steel"
     },
-    rating: 4.6,
+    rating: 5,
     reviewCount: 178,
     inStock: true,
     featured: true,
@@ -457,7 +467,7 @@ export const products: Product[] = [
       "Material": "Aluminum",
       "Height Adjustable": "Yes"
     },
-    rating: 4.5,
+    rating: 5,
     reviewCount: 134,
     inStock: true,
     brand: "Outwest Pro"
@@ -480,7 +490,7 @@ export const products: Product[] = [
       "Material": "Polyester with Steel Frame",
       "Setup Time": "5 minutes"
     },
-    rating: 4.7,
+    rating: 5,
     reviewCount: 89,
     inStock: true,
     brand: "Outwest Comfort"
@@ -503,7 +513,7 @@ export const products: Product[] = [
       "Material": "Ripstop Fabric with Aluminum Frame",
       "Setup Time": "30 seconds"
     },
-    rating: 4.8,
+    rating: 5,
     reviewCount: 156,
     inStock: true,
     brand: "Outwest Pro"
