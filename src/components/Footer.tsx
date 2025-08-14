@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mountain, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,16 +11,13 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="flex items-center space-x-2 mb-4 group">
-              <div className="bg-emerald-600 p-2 rounded-lg group-hover:bg-emerald-700 transition-colors duration-200">
-                <Mountain className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <span className="text-xl font-bold text-white">Outwest</span>
-                <span className="text-xl font-light text-emerald-400 ml-1">
-                  Outfitters
-                </span>
-              </div>
+            <Link to="/" className="flex items-center mb-4 group">
+              <img
+                src="/images/logo-outwest-outfitters.png"
+                alt="Outwest Outfitters"
+                className="h-24 w-auto group-hover:opacity-80 transition-opacity duration-200"
+              />
+              <span className="sr-only">Outwest Outfitters</span>
             </Link>
             <p className="text-gray-300 mb-4 max-w-md">
               Your trusted partner for outdoor adventures since 2025. We provide

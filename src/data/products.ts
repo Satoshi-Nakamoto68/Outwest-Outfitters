@@ -53,10 +53,16 @@ export const products: Product[] = [
     name: "Wilderness Backpacking Tent 2P",
     category: "Tents",
     price: 199.99,
-    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    image: "/images/products/tents/Wilderness-Backpacking-Tent2.webp",
     images: [
-      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+      "/images/products/tents/Wilderness-Backpacking-Tent1.jpg",
+      "/images/products/tents/Wilderness-Backpacking-Tent2.webp",
+      "/images/products/tents/Wilderness-Backpacking-Tent3.jpg",
+      "/images/products/tents/Wilderness-Backpacking-Tent4.jpg",
+      "/images/products/tents/Wilderness-Backpacking-Tent5.jpg",
+      "/images/products/tents/Wilderness-Backpacking-Tent6.jpg",
+      "/images/products/tents/Wilderness-Backpacking-Tent7.webp",
+      "/images/products/tents/Wilderness-Backpacking-Tent8.webp",
     ],
     description: "Ultra-lightweight backpacking tent designed for minimalist adventures. Perfect balance of weight, durability, and weather protection for serious backpackers.",
     specifications: {
@@ -78,10 +84,14 @@ export const products: Product[] = [
     name: "Family Base Camp 8-Person Tent",
     category: "Tents",
     price: 449.99,
-    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    image: "/images/products/tents/Family-Camp-Tent1.jpg",
     images: [
-      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+      "/images/products/tents/Family-Camp-Tent1.jpg",
+      "/images/products/tents/Family-Camp-Tent2.jpg",
+      "/images/products/tents/Family-Camp-Tent3.jpg",
+      "/images/products/tents/Family-Camp-Tent4.jpg",
+      "/images/products/tents/Family-Camp-Tent5.jpg",
+      "/images/products/tents/Family-Camp-Tent6.jpg",
     ],
     description: "Spacious family tent with room dividers and multiple entrances. Perfect for car camping and extended stays with premium comfort features.",
     specifications: {
@@ -103,9 +113,14 @@ export const products: Product[] = [
     name: "Storm Shield 2-Person 4-Season Tent",
     category: "Tents",
     price: 599.99,
-    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    image: "/images/products/tents/Storm-Shield-2Tent1.jpg",
     images: [
-      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"
+      "/images/products/tents/Storm-Shield-2Tent1.jpg",
+      "/images/products/tents/Storm-Shield-2Tent2.jpg",
+      "/images/products/tents/Storm-Shield-2Tent3.jpg",
+      "/images/products/tents/Storm-Shield-2Tent4.jpg",
+      "/images/products/tents/Storm-Shield-2Tent5.jpg",
+      "/images/products/tents/Storm-Shield-2Tent6.jpg",
     ],
     description: "Expedition-grade 4-season tent built to withstand harsh alpine conditions. Features reinforced fabric and geodesic design for maximum stability.",
     specifications: {
@@ -161,9 +176,12 @@ export const products: Product[] = [
     name: "Trail Lightweight Sleeping Pad",
     category: "Sleeping Bags & Pads",
     price: 89.99,
-    image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg",
+    image: "/images/products/sleeping-bags/Trail-Lightweight-Pad2.jpg",
     images: [
-      "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg"
+      "/images/products/sleeping-bags/Trail-Lightweight-Pad1.jpg",
+      "/images/products/sleeping-bags/Trail-Lightweight-Pad3.jpg",
+      "/images/products/sleeping-bags/Trail-Lightweight-Pad4.jpg",
+      "/images/products/sleeping-bags/Trail-Lightweight-Pad5.jpg",
     ],
     description: "Self-inflating sleeping pad with superior insulation and comfort. Perfect for backpacking with minimal weight penalty.",
     specifications: {
@@ -183,9 +201,13 @@ export const products: Product[] = [
     name: "Summer Breeze Synthetic Sleeping Bag",
     category: "Sleeping Bags & Pads",
     price: 129.99,
-    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    image: "/images/products/sleeping-bags/Breeze-Synthetic-Sleeping6.jpg",
     images: [
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+      "/images/products/sleeping-bags/Breeze-Synthetic-Sleeping1.jpg",
+      "/images/products/sleeping-bags/Breeze-Synthetic-Sleeping2.jpg",
+      "/images/products/sleeping-bags/Breeze-Synthetic-Sleeping3.jpg",
+      "/images/products/sleeping-bags/Breeze-Synthetic-Sleeping4.jpg",
+      "/images/products/sleeping-bags/Breeze-Synthetic-Sleeping5.jpg",
     ],
     description: "Versatile synthetic sleeping bag perfect for warm weather camping. Quick-drying and machine washable for easy maintenance.",
     specifications: {
@@ -206,9 +228,13 @@ export const products: Product[] = [
     name: "Deluxe Self-Inflating Sleeping Pad",
     category: "Sleeping Bags & Pads",
     price: 159.99,
-    image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg",
+    image: "/images/products/sleeping-bags/Self-Inflating-Sleeping1.jpg",
     images: [
-      "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg"
+      "/images/products/sleeping-bags/Self-Inflating-Sleeping2.jpg",
+      "/images/products/sleeping-bags/Self-Inflating-Sleeping3.jpg",
+      "/images/products/sleeping-bags/Self-Inflating-Sleeping4.jpg",
+      "/images/products/sleeping-bags/Self-Inflating-Sleeping5.jpg",
+      "/images/products/sleeping-bags/Self-Inflating-Sleeping6.jpg",
     ],
     description: "Premium self-inflating pad with extra thickness for ultimate comfort. Features built-in pillow and repair kit included.",
     specifications: {
@@ -231,10 +257,14 @@ export const products: Product[] = [
     category: "Backpacks & Bags",
     price: 199.99,
     originalPrice: 249.99,
-    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    image: "/images/products/backpacks/Summit-Backpack-65L5.jpg",
     images: [
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+      "/images/products/backpacks/Summit-Backpack-65L1.jpg",
+      "/images/products/backpacks/Summit-Backpack-65L2.jpg",
+      "/images/products/backpacks/Summit-Backpack-65L3.jpg",
+      "/images/products/backpacks/Summit-Backpack-65L4.jpg",
+      "/images/products/backpacks/Summit-Backpack-65L5.jpg",
+      "/images/products/backpacks/Summit-Backpack-65L6.jpg",
     ],
     description: "Professional-grade 65L backpack designed for multi-day adventures. Features adjustable torso length, multiple access points, and integrated rain cover.",
     specifications: {
@@ -256,9 +286,13 @@ export const products: Product[] = [
     name: "Day Hiker 30L Backpack",
     category: "Backpacks & Bags",
     price: 89.99,
-    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    image: "/images/products/backpacks/Hiker-30L-Backpack1.jpg",
     images: [
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+      "/images/products/backpacks/Hiker-30L-Backpack2.jpg",
+      "/images/products/backpacks/Hiker-30L-Backpack3.jpg",
+      "/images/products/backpacks/Hiker-30L-Backpack4.jpg",
+      "/images/products/backpacks/Hiker-30L-Backpack5.jpg",
+      "/images/products/backpacks/Hiker-30L-Backpack6.jpg",
     ],
     description: "Lightweight day pack perfect for hiking and daily adventures. Features external gear loops and side water bottle pockets.",
     specifications: {
@@ -279,9 +313,13 @@ export const products: Product[] = [
     name: "Ultralight 40L Trekking Pack",
     category: "Backpacks & Bags",
     price: 149.99,
-    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    image: "/images/products/backpacks/Ultralight-Trekking-Pack1.jpg",
     images: [
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+      "/images/products/backpacks/Ultralight-Trekking-Pack2.jpg",
+      "/images/products/backpacks/Ultralight-Trekking-Pack3.jpg",
+      "/images/products/backpacks/Ultralight-Trekking-Pack4.jpg",
+      "/images/products/backpacks/Ultralight-Trekking-Pack5.jpg",
+      "/images/products/backpacks/Ultralight-Trekking-Pack6.jpg",
     ],
     description: "Minimalist backpack for weight-conscious hikers. Streamlined design without sacrificing essential features.",
     specifications: {
@@ -302,9 +340,13 @@ export const products: Product[] = [
     name: "Adventure Duffel Bag 90L",
     category: "Backpacks & Bags",
     price: 119.99,
-    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+    image: "/images/products/backpacks/Duffel-Bag-90L1.jpg",
     images: [
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"
+      "/images/products/backpacks/Duffel-Bag-90L2.jpg",
+      "/images/products/backpacks/Duffel-Bag-90L3.jpg",
+      "/images/products/backpacks/Duffel-Bag-90L4.jpg",
+      "/images/products/backpacks/Duffel-Bag-90L5.jpg",
+      "/images/products/backpacks/Duffel-Bag-90L6.jpg",
     ],
     description: "Rugged duffel bag perfect for base camp storage and travel. Converts to backpack with removable shoulder straps.",
     specifications: {
@@ -327,10 +369,14 @@ export const products: Product[] = [
     name: "Alpine Chef Camping Stove System",
     category: "Camp Kitchen",
     price: 149.99,
-    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    image: "/images/products/camp-kitchen/Alpine-Chef2.jpg",
     images: [
-      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+      "/images/products/camp-kitchen/Alpine-Chef1.jpg",
+      "/images/products/camp-kitchen/Alpine-Chef2.jpg",
+      "/images/products/camp-kitchen/Alpine-Chef3.jpg",
+      "/images/products/camp-kitchen/Alpine-Chef4.jpg",
+      "/images/products/camp-kitchen/Alpine-Chef5.jpg",
+      "/images/products/camp-kitchen/Alpine-Chef6.jpg",
     ],
     description: "Complete cooking system with integrated pot, efficient burner, and piezo ignition. Boils water in under 3 minutes.",
     specifications: {
@@ -352,9 +398,12 @@ export const products: Product[] = [
     name: "Compact Titanium Cookset",
     category: "Camp Kitchen",
     price: 89.99,
-    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    image: "/images/products/camp-kitchen/Titanium-Cookset1.jpg",
     images: [
-      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"
+      "/images/products/camp-kitchen/Titanium-Cookset2.jpg",
+      "/images/products/camp-kitchen/Titanium-Cookset3.jpg",
+      "/images/products/camp-kitchen/Titanium-Cookset4.jpg",
+      "/images/products/camp-kitchen/Titanium-Cookset5.jpg",
     ],
     description: "Ultra-lightweight titanium cookset perfect for backpacking. Includes pot, pan, and collapsible utensils.",
     specifications: {
@@ -375,9 +424,12 @@ export const products: Product[] = [
     name: "Portable Water Filter System",
     category: "Camp Kitchen",
     price: 79.99,
-    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    image: "/images/products/camp-kitchen/Water-Filter-System1.jpg",
     images: [
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+      "/images/products/camp-kitchen/Water-Filter-System2.jpg",
+      "/images/products/camp-kitchen/Water-Filter-System3.jpg",
+      "/images/products/camp-kitchen/Water-Filter-System4.jpg",
+      "/images/products/camp-kitchen/Water-Filter-System5.jpg",
     ],
     description: "Advanced water filtration system removes 99.9% of bacteria and protozoa. Lightweight and easy to use in the field.",
     specifications: {
@@ -398,9 +450,12 @@ export const products: Product[] = [
     name: "Insulated Food Storage Container Set",
     category: "Camp Kitchen",
     price: 59.99,
-    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    image: "/images/products/camp-kitchen/Storage-Container-Set1.jpg",
     images: [
-      "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"
+      "/images/products/camp-kitchen/Storage-Container-Set2.jpg",
+      "/images/products/camp-kitchen/Storage-Container-Set3.jpg",
+      "/images/products/camp-kitchen/Storage-Container-Set4.jpg",
+      "/images/products/camp-kitchen/Storage-Container-Set5.jpg",
     ],
     description: "Set of 3 vacuum-insulated containers keeps food hot or cold for hours. Leak-proof design perfect for outdoor dining.",
     specifications: {
@@ -426,7 +481,6 @@ export const products: Product[] = [
     originalPrice: 99.99,
     image: "/images/products/camp-furniture/Plus-Camping-Chair1.jpg",
     images: [
-      "/images/products/camp-furniture/Plus-Camping-Chair1.jpg",
       "/images/products/camp-furniture/Plus-Camping-Chair2.jpg",
       "/images/products/camp-furniture/Plus-Camping-Chair3.jpg",
       "/images/products/camp-furniture/Plus-Camping-Chair4.jpg",
@@ -454,9 +508,11 @@ export const products: Product[] = [
     name: "Lightweight Folding Table",
     category: "Camp Furniture",
     price: 89.99,
-    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    image: "/images/products/camp-furniture/Folding-Table1.jpg",
     images: [
-      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg"
+      "/images/products/camp-furniture/Folding-Table2.jpg",
+      "/images/products/camp-furniture/Folding-Table3.jpg",
+      "/images/products/camp-furniture/Folding-Table4.jpg",
     ],
     description: "Compact aluminum folding table perfect for cooking and dining. Weather-resistant surface with adjustable height legs.",
     specifications: {
@@ -477,9 +533,14 @@ export const products: Product[] = [
     name: "Portable Hammock with Stand",
     category: "Camp Furniture",
     price: 129.99,
-    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    image: "/images/products/camp-furniture/Hammock-with-Stand1.jpg",
     images: [
-      "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"
+      "/images/products/camp-furniture/Hammock-with-Stand2.jpg",
+      "/images/products/camp-furniture/Hammock-with-Stand3.jpg",
+      "/images/products/camp-furniture/Hammock-with-Stand4.jpg",
+      "/images/products/camp-furniture/Hammock-with-Stand5.jpg",
+      "/images/products/camp-furniture/Hammock-with-Stand6.jpg",
+      "/images/products/camp-furniture/Hammock-with-Stand7.jpg",
     ],
     description: "Complete hammock system with portable steel stand. Perfect for relaxation anywhere without trees.",
     specifications: {
@@ -500,9 +561,12 @@ export const products: Product[] = [
     name: "Compact Camping Cot",
     category: "Camp Furniture",
     price: 149.99,
-    image: "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg",
+    image: "/images/products/camp-furniture/Camping-Cot1.jpg",
     images: [
-      "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg"
+      "/images/products/camp-furniture/Camping-Cot2.jpg",
+      "/images/products/camp-furniture/Camping-Cot3.jpg",
+      "/images/products/camp-furniture/Camping-Cot4.jpg",
+      "/images/products/camp-furniture/Camping-Cot5.jpg",
     ],
     description: "Elevated camping cot keeps you off the ground for better sleep. Quick setup with no assembly required.",
     specifications: {
@@ -525,8 +589,14 @@ export const products: Product[] = [
     name: "Quick Setup Pop-Up Tent 3P",
     category: "Tents",
     price: 179.99,
-    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
-    images: ["https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"],
+    image: "/images/products/tents/Pop-Up-Tent-3P1.jpg",
+    images: [
+      "/images/products/tents/Pop-Up-Tent-3P2.jpg",
+      "/images/products/tents/Pop-Up-Tent-3P3.jpg",
+      "/images/products/tents/Pop-Up-Tent-3P4.jpg",
+      "/images/products/tents/Pop-Up-Tent-3P5.jpg",
+      "/images/products/tents/Pop-Up-Tent-3P6.jpg",
+    ],
     description: "Instant setup tent that pops up in seconds. Perfect for festivals and quick camping trips.",
     specifications: {
       "Capacity": "3 People",
@@ -547,8 +617,17 @@ export const products: Product[] = [
     name: "Ultralight Down Sleeping Bag",
     category: "Sleeping Bags & Pads",
     price: 399.99,
-    image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
-    images: ["https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg"],
+    image: "/images/products/sleeping-bags/Ultralight-Sleeping-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag2.jpg",
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag3.jpg",
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag4.jpg",
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag5.jpg",
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag6.jpg",
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag7.jpg",
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag8.jpg",
+      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag9.jpg",
+    ],
     description: "Premium 800-fill down sleeping bag for extreme lightweight backpacking. Temperature rated to 0°F.",
     specifications: {
       "Temperature Rating": "0°F",
@@ -568,8 +647,14 @@ export const products: Product[] = [
     name: "Hydration Pack 15L",
     category: "Backpacks & Bags",
     price: 69.99,
-    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
-    images: ["https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"],
+    image: "/images/products/backpacks/Hydration-Pack-15L1.jpg",
+    images: [
+      "/images/products/backpacks/Hydration-Pack-15L2.jpg",
+      "/images/products/backpacks/Hydration-Pack-15L3.jpg",
+      "/images/products/backpacks/Hydration-Pack-15L4.jpg",
+      "/images/products/backpacks/Hydration-Pack-15L5.jpg",
+      "/images/products/backpacks/Hydration-Pack-15L6.jpg",
+    ],
     description: "Lightweight hydration pack with 2L reservoir. Perfect for day hikes and mountain biking.",
     specifications: {
       "Capacity": "15L",
@@ -589,8 +674,13 @@ export const products: Product[] = [
     name: "Multi-Tool Camping Utensil Set",
     category: "Camp Kitchen",
     price: 29.99,
-    image: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
-    images: ["https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg"],
+    image: "/images/products/camp-kitchen/Camping-Utensil-Set1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Camping-Utensil-Set2.jpg",
+      "/images/products/camp-kitchen/Camping-Utensil-Set3.jpg",
+      "/images/products/camp-kitchen/Camping-Utensil-Set4.jpg",
+      "/images/products/camp-kitchen/Camping-Utensil-Set5.png",
+    ],
     description: "Compact utensil set with fork, knife, spoon, bottle opener, and can opener. Made from durable titanium.",
     specifications: {
       "Material": "Titanium",
@@ -610,8 +700,13 @@ export const products: Product[] = [
     name: "Inflatable Pillow Deluxe",
     category: "Camp Furniture",
     price: 24.99,
-    image: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
-    images: ["https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg"],
+    image: "/images/products/camp-furniture/Pillow-Deluxe4.jpg",
+    images: [
+      "/images/products/camp-furniture/Pillow-Deluxe2.jpg",
+      "/images/products/camp-furniture/Pillow-Deluxe3.jpg",
+      "/images/products/camp-furniture/Pillow-Deluxe1.jpg",
+      "/images/products/camp-furniture/Pillow-Deluxe5.jpg",
+    ],
     description: "Ergonomic inflatable pillow with soft-touch fabric. Packs down to size of smartphone.",
     specifications: {
       "Weight": "2.8 oz",

@@ -13,13 +13,55 @@ import { getProductById } from "../data/products";
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const product = getProductById(id || "");
 
   // Scroll to top when component mounts or product changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  const product = getProductById(id || "");
+  // Handle keyboard events for modal
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!isModalOpen || !product) return;
+
+      switch (event.key) {
+        case "Escape":
+          setIsModalOpen(false);
+          break;
+        case "ArrowLeft":
+          event.preventDefault();
+          setSelectedImageIndex((prev) =>
+            prev > 0
+              ? prev - 1
+              : product.images.length > 0
+              ? product.images.length
+              : 0
+          );
+          break;
+        case "ArrowRight":
+          event.preventDefault();
+          setSelectedImageIndex((prev) =>
+            prev < (product.images.length > 0 ? product.images.length : 0)
+              ? prev + 1
+              : 0
+          );
+          break;
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "unset";
+    };
+  }, [isModalOpen, product]);
 
   if (!product) {
     return (
@@ -97,10 +139,15 @@ const ProductDetailPage: React.FC = () => {
           <div>
             <div className="relative mb-4">
               <img
-                src={product.images[selectedImageIndex]}
+                src={
+                  selectedImageIndex === 0
+                    ? product.image
+                    : product.images[selectedImageIndex - 1]
+                }
                 alt={product.name}
                 loading="lazy"
-                className="w-full h-96 object-contain bg-gray-100 rounded-lg"
+                className="w-full h-96 object-contain bg-gray-100 rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() => setIsModalOpen(true)}
               />
               {/* {product.originalPrice && (
                 <div className="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-md font-semibold">
@@ -114,12 +161,16 @@ const ProductDetailPage: React.FC = () => {
               )}
 
               {/* Navigation arrows */}
-              {product.images.length > 1 && (
+              {(product.images.length > 0 || product.image) && (
                 <>
                   <button
                     onClick={() =>
                       setSelectedImageIndex((prev) =>
-                        prev > 0 ? prev - 1 : product.images.length - 1
+                        prev > 0
+                          ? prev - 1
+                          : product.images.length > 0
+                          ? product.images.length
+                          : 0
                       )
                     }
                     className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
@@ -129,7 +180,10 @@ const ProductDetailPage: React.FC = () => {
                   <button
                     onClick={() =>
                       setSelectedImageIndex((prev) =>
-                        prev < product.images.length - 1 ? prev + 1 : 0
+                        prev <
+                        (product.images.length > 0 ? product.images.length : 0)
+                          ? prev + 1
+                          : 0
                       )
                     }
                     className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
@@ -141,21 +195,38 @@ const ProductDetailPage: React.FC = () => {
             </div>
 
             {/* Thumbnail Images */}
-            {product.images.length > 1 && (
+            {(product.images.length > 0 || product.image) && (
               <div className="flex space-x-2 overflow-x-auto">
+                {/* Main image thumbnail */}
+                <button
+                  onClick={() => setSelectedImageIndex(0)}
+                  className={`flex-shrink-0 w-20 h-20 border-2 rounded-lg overflow-hidden ${
+                    selectedImageIndex === 0
+                      ? "border-emerald-600"
+                      : "border-gray-200 hover:border-gray-300"
+                  }`}
+                >
+                  <img
+                    src={product.image}
+                    alt={`${product.name} main`}
+                    loading="lazy"
+                    className="w-full h-full object-contain bg-gray-100"
+                  />
+                </button>
+                {/* Additional images thumbnails */}
                 {product.images.map((image, index) => (
                   <button
                     key={index}
-                    onClick={() => setSelectedImageIndex(index)}
+                    onClick={() => setSelectedImageIndex(index + 1)}
                     className={`flex-shrink-0 w-20 h-20 border-2 rounded-lg overflow-hidden ${
-                      selectedImageIndex === index
+                      selectedImageIndex === index + 1
                         ? "border-emerald-600"
                         : "border-gray-200 hover:border-gray-300"
                     }`}
                   >
                     <img
                       src={image}
-                      alt={`${product.name} ${index + 1}`}
+                      alt={`${product.name} ${index + 2}`}
                       loading="lazy"
                       className="w-full h-full object-contain bg-gray-100"
                     />
@@ -332,6 +403,83 @@ const ProductDetailPage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Image Modal/Lightbox */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-4xl max-h-full">
+            {/* Close button */}
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full p-2"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Main image */}
+            <img
+              src={
+                selectedImageIndex === 0
+                  ? product.image
+                  : product.images[selectedImageIndex - 1]
+              }
+              alt={product.name}
+              className="max-w-full max-h-[80vh] object-contain"
+            />
+
+            {/* Navigation arrows */}
+            {(product.images.length > 0 || product.image) && (
+              <>
+                <button
+                  onClick={() =>
+                    setSelectedImageIndex((prev) =>
+                      prev > 0
+                        ? prev - 1
+                        : product.images.length > 0
+                        ? product.images.length
+                        : 0
+                    )
+                  }
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-colors"
+                >
+                  <ChevronLeft className="h-6 w-6" />
+                </button>
+                <button
+                  onClick={() =>
+                    setSelectedImageIndex((prev) =>
+                      prev <
+                      (product.images.length > 0 ? product.images.length : 0)
+                        ? prev + 1
+                        : 0
+                    )
+                  }
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-colors"
+                >
+                  <ChevronRight className="h-6 w-6" />
+                </button>
+              </>
+            )}
+
+            {/* Image counter */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+              {selectedImageIndex + 1} /{" "}
+              {product.images.length > 0 ? product.images.length + 1 : 1}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
