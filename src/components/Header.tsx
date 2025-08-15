@@ -102,7 +102,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img
-                src="/images/logo-outwest-outfitters.png"
+                src="/images/Logo-Outwest-Outfitters.png"
                 alt="Outwest Outfitters"
                 className="h-20 w-auto"
               />

@@ -138,6 +138,298 @@ export const products: Product[] = [
     featured: true,
     brand: "Outwest Extreme"
   },
+  {
+    id: "tent-006",
+    name: "Summit Breeze 2-Person Backpacking Tent",
+    category: "Tents",
+    price: 189.99,
+    originalPrice: 229.99,
+    image: "/images/products/tents/Summit-Breeze-7.jpg",
+    images: [
+      "/images/products/tents/Summit-Breeze-1.jpg",
+      "/images/products/tents/Summit-Breeze-2.jpg",
+      "/images/products/tents/Summit-Breeze-3.jpg",
+      "/images/products/tents/Summit-Breeze-4.jpg",
+      "/images/products/tents/Summit-Breeze-5.jpg",
+      "/images/products/tents/Summit-Breeze-6.jpg",
+    ],
+    description: "Lightweight and compact, the Summit Breeze is perfect for solo or duo backpacking trips. Features quick-setup poles and weather-resistant materials.",
+    specifications: {
+      "Capacity": "2 People",
+      "Weight": "4.5 lbs",
+      "Floor Area": "30 sq ft",
+      "Peak Height": "3'8\"",
+      "Waterproof Rating": "2500mm",
+      "Season": "3-Season",
+      "Setup Time": "8 minutes"
+    },
+    rating: 4.7,
+    reviewCount: 92,
+    inStock: true,
+    featured: false,
+    brand: "TrailBound"
+  },
+  {
+    id: "tent-007",
+    name: "Canyon Explorer 6-Person Family Tent",
+    category: "Tents",
+    price: 429.99,
+    originalPrice: 499.99,
+    image: "/images/products/tents/Canyon-Explorer-Tent2.jpg",
+    images: [
+      "/images/products/tents/Canyon-Explorer-Tent1.jpg",
+      "/images/products/tents/Canyon-Explorer-Tent3.jpg",
+      "/images/products/tents/Canyon-Explorer-Tent4.jpg",
+      "/images/products/tents/Canyon-Explorer-Tent5.jpg",
+    ],
+    description: "Spacious 6-person tent with two separate rooms and large mesh windows for ventilation. Ideal for family camping trips.",
+    specifications: {
+      "Capacity": "6 People",
+      "Weight": "16 lbs",
+      "Floor Area": "90 sq ft",
+      "Peak Height": "6'5\"",
+      "Waterproof Rating": "3000mm",
+      "Season": "3-Season",
+      "Setup Time": "20 minutes"
+    },
+    rating: 4.8,
+    reviewCount: 58,
+    inStock: true,
+    featured: true,
+    brand: "CampVista"
+  },
+  {
+    id: "tent-008",
+    name: "Pine Ridge Ultralight 1-Person Tent",
+    category: "Tents",
+    price: 149.99,
+    originalPrice: 179.99,
+    image: "/images/products/tents/Pine-Ridge-Tent1.jpg",
+    images: [
+      "/images/products/tents/Pine-Ridge-Tent1.jpg",
+      "/images/products/tents/Pine-Ridge-Tent2.jpg",
+      "/images/products/tents/Pine-Ridge-Tent3.jpg"
+    ],
+    description: "An ultralight solo tent designed for minimalists. Packs down small and sets up in minutes, offering excellent rain protection.",
+    specifications: {
+      "Capacity": "1 Person",
+      "Weight": "2.8 lbs",
+      "Floor Area": "20 sq ft",
+      "Peak Height": "3'2\"",
+      "Waterproof Rating": "2000mm",
+      "Season": "3-Season",
+      "Setup Time": "5 minutes"
+    },
+    rating: 4.5,
+    reviewCount: 41,
+    inStock: true,
+    featured: false,
+    brand: "LightPath Gear"
+  },
+  {
+    id: "tent-009",
+    name: "Everest Shield 4-Season Expedition Tent",
+    category: "Tents",
+    price: 699.99,
+    originalPrice: 799.99,
+    image: "/images/products/tents/Everest-Shield-Tent1.jpg",
+    images: [
+      "/images/products/tents/Everest-Shield-Tent1.jpg",
+      "/images/products/tents/Everest-Shield-Tent2.jpg",
+      "/images/products/tents/Everest-Shield-Tent3.jpg",
+      "/images/products/tents/Everest-Shield-Tent4.jpg",
+      "/images/products/tents/Everest-Shield-Tent5.jpg"
+    ],
+    description: "Built for extreme conditions, this 4-season tent offers unbeatable wind and snow protection for serious mountaineers.",
+    specifications: {
+      "Capacity": "3 People",
+      "Weight": "10.5 lbs",
+      "Floor Area": "48 sq ft",
+      "Peak Height": "4'8\"",
+      "Waterproof Rating": "5000mm",
+      "Season": "4-Season",
+      "Setup Time": "15 minutes"
+    },
+    rating: 5,
+    reviewCount: 77,
+    inStock: true,
+    featured: true,
+    brand: "SummitPro"
+  },
+  {
+    id: "tent-010",
+    name: "Riverbend Screen House Shelter",
+    category: "Tents",
+    price: 159.99,
+    originalPrice: 199.99,
+    image: "/images/products/tents/Riverbend-Shelter1.jpg",
+    images: [
+      "/images/products/tents/Riverbend-Shelter1.jpg",
+      "/images/products/tents/Riverbend-Shelter2.jpg",
+      "/images/products/tents/Riverbend-Shelter3.jpg"
+    ],
+    description: "A spacious screen shelter perfect for picnics and bug-free lounging at the campsite.",
+    specifications: {
+      "Capacity": "Up to 8 People",
+      "Weight": "12 lbs",
+      "Floor Area": "120 sq ft",
+      "Peak Height": "7'0\"",
+      "Waterproof Rating": "1500mm",
+      "Season": "3-Season",
+      "Setup Time": "12 minutes"
+    },
+    rating: 4.6,
+    reviewCount: 35,
+    inStock: true,
+    featured: false,
+    brand: "NatureNest"
+  },
+  {
+    id: "tent-011",
+    name: "Glacier View Dome Tent",
+    category: "Tents",
+    price: 249.99,
+    originalPrice: 299.99,
+    image: "/images/products/tents/Glacier-View-Tent1.jpg",
+    images: [
+      "/images/products/tents/Glacier-View-Tent1.jpg",
+      "/images/products/tents/Glacier-View-Tent2.jpg",
+      "/images/products/tents/Glacier-View-Tent3.jpg",
+      "/images/products/tents/Glacier-View-Tent4.jpg"
+    ],
+    description: "A durable dome tent with extra headroom and large vestibules, ideal for weekend camping trips.",
+    specifications: {
+      "Capacity": "4 People",
+      "Weight": "9 lbs",
+      "Floor Area": "60 sq ft",
+      "Peak Height": "5'0\"",
+      "Waterproof Rating": "3000mm",
+      "Season": "3-Season",
+      "Setup Time": "10 minutes"
+    },
+    rating: 4.7,
+    reviewCount: 83,
+    inStock: true,
+    featured: false,
+    brand: "PeakTrail"
+  },
+  {
+    id: "tent-012",
+    name: "Sahara Shade Desert Tent",
+    category: "Tents",
+    price: 319.99,
+    originalPrice: 379.99,
+    image: "/images/products/tents/Sahara-Shade-Tent1.jpg",
+    images: [
+      "/images/products/tents/Sahara-Shade-Tent1.jpg",
+      "/images/products/tents/Sahara-Shade-Tent2.jpg",
+      "/images/products/tents/Sahara-Shade-Tent3.jpg"
+    ],
+    description: "Specially designed for hot climates, this tent features reflective fabric and extra ventilation panels.",
+    specifications: {
+      "Capacity": "3 People",
+      "Weight": "7.8 lbs",
+      "Floor Area": "50 sq ft",
+      "Peak Height": "4'6\"",
+      "Waterproof Rating": "2000mm",
+      "Season": "3-Season",
+      "Setup Time": "12 minutes"
+    },
+    rating: 4.4,
+    reviewCount: 49,
+    inStock: true,
+    featured: false,
+    brand: "SunTrek"
+  },
+  {
+    id: "tent-013",
+    name: "Forest Haven Canvas Tent",
+    category: "Tents",
+    price: 549.99,
+    originalPrice: 629.99,
+    image: "/images/products/tents/Forest-Haven-Tent1.jpg",
+    images: [
+      "/images/products/tents/Forest-Haven-Tent1.jpg",
+      "/images/products/tents/Forest-Haven-Tent2.jpg",
+      "/images/products/tents/Forest-Haven-Tent3.jpg",
+      "/images/products/tents/Forest-Haven-Tent4.jpg"
+    ],
+    description: "Classic canvas tent offering excellent insulation and a cozy feel for extended camping trips.",
+    specifications: {
+      "Capacity": "5 People",
+      "Weight": "28 lbs",
+      "Floor Area": "80 sq ft",
+      "Peak Height": "7'2\"",
+      "Waterproof Rating": "3500mm",
+      "Season": "4-Season",
+      "Setup Time": "25 minutes"
+    },
+    rating: 4.9,
+    reviewCount: 64,
+    inStock: true,
+    featured: true,
+    brand: "Heritage Camp"
+  },
+  {
+    id: "tent-014",
+    name: "Mountain Trail Tunnel Tent",
+    category: "Tents",
+    price: 379.99,
+    originalPrice: 449.99,
+    image: "/images/products/tents/Mountain-Trail-Tent1.jpg",
+    images: [
+      "/images/products/tents/Mountain-Trail-Tent1.jpg",
+      "/images/products/tents/Mountain-Trail-Tent2.jpg",
+      "/images/products/tents/Mountain-Trail-Tent3.jpg",
+      "/images/products/tents/Mountain-Trail-Tent4.jpg"
+    ],
+    description: "Tunnel-shaped tent offering excellent wind stability and multiple entrances for easy access.",
+    specifications: {
+      "Capacity": "4 People",
+      "Weight": "11 lbs",
+      "Floor Area": "65 sq ft",
+      "Peak Height": "5'8\"",
+      "Waterproof Rating": "4000mm",
+      "Season": "4-Season",
+      "Setup Time": "18 minutes"
+    },
+    rating: 4.6,
+    reviewCount: 52,
+    inStock: true,
+    featured: false,
+    brand: "WindPeak"
+  },
+  {
+    id: "tent-015",
+    name: "Lakeside Retreat Cabin Tent",
+    category: "Tents",
+    price: 499.99,
+    originalPrice: 579.99,
+    image: "/images/products/tents/Lakeside-Retreat-Tent1.jpg",
+    images: [
+      "/images/products/tents/Lakeside-Retreat-Tent1.jpg",
+      "/images/products/tents/Lakeside-Retreat-Tent2.jpg",
+      "/images/products/tents/Lakeside-Retreat-Tent3.jpg",
+      "/images/products/tents/Lakeside-Retreat-Tent4.jpg",
+      "/images/products/tents/Lakeside-Retreat-Tent5.jpg"
+    ],
+    description: "Spacious cabin-style tent with tall ceilings and large windows for a comfortable glamping experience.",
+    specifications: {
+      "Capacity": "8 People",
+      "Weight": "22 lbs",
+      "Floor Area": "140 sq ft",
+      "Peak Height": "7'8\"",
+      "Waterproof Rating": "3000mm",
+      "Season": "3-Season",
+      "Setup Time": "25 minutes"
+    },
+    rating: 4.8,
+    reviewCount: 88,
+    inStock: true,
+    featured: true,
+    brand: "ComfortCamp"
+  },
+
 
   // SLEEPING BAGS & PADS
   {
