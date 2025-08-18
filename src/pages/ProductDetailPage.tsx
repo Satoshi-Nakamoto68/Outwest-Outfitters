@@ -8,12 +8,14 @@ import {
   Shield,
   RotateCcw,
 } from "lucide-react";
-import { getProductById } from "../data/products";
+import { getProductById, getProductsByCategory } from "../data/products";
+import ProductCard from "../components/ProductCard";
 
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMainLoaded, setIsMainLoaded] = useState(false);
 
   const product = getProductById(id || "");
 
@@ -21,6 +23,11 @@ const ProductDetailPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
+
+  // Reset main image loading state when the displayed image changes
+  useEffect(() => {
+    setIsMainLoaded(false);
+  }, [selectedImageIndex, id]);
 
   // Handle keyboard events for modal
   useEffect(() => {
@@ -81,35 +88,11 @@ const ProductDetailPage: React.FC = () => {
     );
   }
 
-  const sampleReviews = [
-    {
-      id: "1",
-      author: "Sarah M.",
-      rating: 5,
-      comment:
-        "Absolutely love this product! Exceeded my expectations in every way. The quality is outstanding and it performs exactly as described.",
-      date: "Jan 15, 2025",
-      verified: true,
-    },
-    {
-      id: "2",
-      author: "Mike R.",
-      rating: 4,
-      comment:
-        "Great value for the price. Very satisfied with the purchase. Only minor issue was the delivery took a bit longer than expected.",
-      date: "Jan 10, 2025",
-      verified: true,
-    },
-    {
-      id: "3",
-      author: "Emily K.",
-      rating: 5,
-      comment:
-        "Perfect for my needs! The build quality is impressive and it has held up well during multiple camping trips. Highly recommended.",
-      date: "Jan 8, 2025",
-      verified: false,
-    },
-  ];
+  const relatedProducts = getProductsByCategory(product.category)
+    .filter((p) => p.id !== product.id)
+    .slice(0, 8);
+
+  
 
   return (
     <div className="min-h-screen bg-white">
@@ -137,70 +120,147 @@ const ProductDetailPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Images */}
           <div>
-            <div className="relative mb-4">
-              <img
-                src={
-                  selectedImageIndex === 0
-                    ? product.image
-                    : product.images[selectedImageIndex - 1]
-                }
-                alt={product.name}
-                loading="lazy"
-                className="w-full h-96 object-contain bg-gray-100 rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => setIsModalOpen(true)}
-              />
-              {/* {product.originalPrice && (
-                <div className="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-md font-semibold">
-                  Sale
-                </div>
-              )} */}
-              {!product.inStock && (
-                <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-md font-semibold">
-                  Out of Stock
+            <div className="md:flex md:gap-4">
+              {/* Vertical Thumbnails (Desktop) */}
+              {(product.images.length > 0 || product.image) && (
+                <div className="hidden md:flex md:flex-col w-28 space-y-3 overflow-y-auto max-h-[30rem] pr-1">
+                  {/* Main image thumbnail */}
+                  <button
+                    onClick={() => setSelectedImageIndex(0)}
+                    className={`w-24 h-24 border-2 rounded-lg overflow-hidden ${
+                      selectedImageIndex === 0
+                        ? "border-emerald-600"
+                        : "border-gray-200 hover:border-gray-300"
+                    }`}
+                  >
+                    <img
+                      src={product.image}
+                      alt={`${product.name} main`}
+                      loading="lazy"
+                      className="w-full h-full object-contain bg-gray-100"
+                    />
+                  </button>
+                  {/* Additional images thumbnails */}
+                  {product.images.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setSelectedImageIndex(index + 1)}
+                      className={`w-24 h-24 border-2 rounded-lg overflow-hidden ${
+                        selectedImageIndex === index + 1
+                          ? "border-emerald-600"
+                          : "border-gray-200 hover:border-gray-300"
+                      }`}
+                    >
+                      <img
+                        src={image}
+                        alt={`${product.name} ${index + 2}`}
+                        loading="lazy"
+                        className="w-full h-full object-contain bg-gray-100"
+                      />
+                    </button>
+                  ))}
                 </div>
               )}
 
-              {/* Navigation arrows */}
-              {(product.images.length > 0 || product.image) && (
-                <>
-                  <button
-                    onClick={() =>
-                      setSelectedImageIndex((prev) =>
-                        prev > 0
-                          ? prev - 1
-                          : product.images.length > 0
-                          ? product.images.length
-                          : 0
-                      )
-                    }
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-                  >
-                    <ChevronLeft className="h-5 w-5" />
-                  </button>
-                  <button
-                    onClick={() =>
-                      setSelectedImageIndex((prev) =>
-                        prev <
-                        (product.images.length > 0 ? product.images.length : 0)
-                          ? prev + 1
-                          : 0
-                      )
-                    }
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-                  >
-                    <ChevronRight className="h-5 w-5" />
-                  </button>
-                </>
-              )}
+              {/* Main Image */}
+              <div className="relative mb-4 md:mb-0 flex-1">
+                <div className="relative group rounded-2xl p-[2px] bg-gradient-to-br from-emerald-500/40 via-emerald-300/20 to-transparent">
+                  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-b from-white to-slate-50 ring-1 ring-black/5 shadow-xl">
+                    {/* Decorative glow */}
+                    <div className="pointer-events-none absolute -inset-16 bg-[radial-gradient(ellipse_at_top_left,rgba(16,185,129,0.10),transparent_55%),radial-gradient(ellipse_at_bottom_right,rgba(59,130,246,0.08),transparent_55%)] blur-2xl" />
+                    {/* Glass sheen highlight */}
+                    <div className="pointer-events-none absolute -top-10 -left-12 w-3/4 h-24 bg-white/35 blur-xl rounded-full transform -rotate-6" />
+                    {/* Soft vignette */}
+                    <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_80px_rgba(0,0,0,0.05)] rounded-2xl" />
+
+                    {/* Loading skeleton */}
+                    {!isMainLoaded && (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="h-[22rem] sm:h-[24rem] md:h-[28rem] lg:h-[30rem] w-full bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100 animate-shimmer [background-size:200%_100%]" />
+                      </div>
+                    )}
+
+                    {/* Main image */}
+                    <img
+                      src={
+                        selectedImageIndex === 0
+                          ? product.image
+                          : product.images[selectedImageIndex - 1]
+                      }
+                      alt={product.name}
+                      loading="lazy"
+                      onLoad={() => setIsMainLoaded(true)}
+                      className={`w-full h-[22rem] sm:h-[24rem] md:h-[28rem] lg:h-[30rem] object-contain cursor-zoom-in transition-all duration-500 ease-out ${
+                        isMainLoaded ? "opacity-100" : "opacity-0"
+                      } group-hover:scale-[1.02]`}
+                      onClick={() => setIsModalOpen(true)}
+                    />
+
+                    {/* Click hint */}
+                    <div className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 text-xs text-slate-500/80 bg-white/70 px-2 py-1 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                      Click to zoom
+                    </div>
+
+                    {/* Image counter */}
+                    {(product.images.length > 0 || product.image) && (
+                      <div className="absolute top-3 right-3 bg-white/80 backdrop-blur px-2 py-1 rounded-full text-xs text-slate-700 shadow-sm ring-1 ring-black/5">
+                        {selectedImageIndex + 1} / {product.images.length > 0 ? product.images.length + 1 : 1}
+                      </div>
+                    )}
+
+                    {/* Status badge */}
+                    {!product.inStock && (
+                      <div className="absolute top-3 left-3 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">
+                        Out of Stock
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Navigation arrows */}
+                {(product.images.length > 0 || product.image) && (
+                  <>
+                    <button
+                      onClick={() =>
+                        setSelectedImageIndex((prev) =>
+                          prev > 0
+                            ? prev - 1
+                            : product.images.length > 0
+                            ? product.images.length
+                            : 0
+                        )
+                      }
+                      className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur p-2 rounded-full shadow-lg ring-1 ring-black/5 hover:bg-white transition"
+                      aria-label="Previous image"
+                    >
+                      <ChevronLeft className="h-5 w-5" />
+                    </button>
+                    <button
+                      onClick={() =>
+                        setSelectedImageIndex((prev) =>
+                          prev <
+                          (product.images.length > 0 ? product.images.length : 0)
+                            ? prev + 1
+                            : 0
+                        )
+                      }
+                      className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur p-2 rounded-full shadow-lg ring-1 ring-black/5 hover:bg-white transition"
+                      aria-label="Next image"
+                    >
+                      <ChevronRight className="h-5 w-5" />
+                    </button>
+                  </>
+                )}
+              </div>
             </div>
 
-            {/* Thumbnail Images */}
+            {/* Thumbnail Images (Mobile) */}
             {(product.images.length > 0 || product.image) && (
-              <div className="flex space-x-2 overflow-x-auto">
+              <div className="md:hidden flex space-x-3 overflow-x-auto">
                 {/* Main image thumbnail */}
                 <button
                   onClick={() => setSelectedImageIndex(0)}
-                  className={`flex-shrink-0 w-20 h-20 border-2 rounded-lg overflow-hidden ${
+                  className={`flex-shrink-0 w-24 h-24 border-2 rounded-lg overflow-hidden ${
                     selectedImageIndex === 0
                       ? "border-emerald-600"
                       : "border-gray-200 hover:border-gray-300"
@@ -218,7 +278,7 @@ const ProductDetailPage: React.FC = () => {
                   <button
                     key={index}
                     onClick={() => setSelectedImageIndex(index + 1)}
-                    className={`flex-shrink-0 w-20 h-20 border-2 rounded-lg overflow-hidden ${
+                    className={`flex-shrink-0 w-24 h-24 border-2 rounded-lg overflow-hidden ${
                       selectedImageIndex === index + 1
                         ? "border-emerald-600"
                         : "border-gray-200 hover:border-gray-300"
@@ -363,6 +423,28 @@ const ProductDetailPage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Related Products */}
+        {relatedProducts.length > 0 && (
+          <div className="mt-16">
+            <div className="flex items-baseline justify-between mb-6">
+              <h2 className="text-2xl font-bold text-gray-900">
+                Related Products
+              </h2>
+              <Link
+                to={`/products?category=${encodeURIComponent(product.category)}`}
+                className="text-emerald-600 hover:text-emerald-700 text-sm"
+              >
+                View all {product.category}
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedProducts.map((related) => (
+                <ProductCard key={related.id} product={related} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Customer Reviews */}
         {/* <div className="mt-16">

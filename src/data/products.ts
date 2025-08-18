@@ -858,7 +858,6 @@ export const products: Product[] = [
       "/images/products/backpacks/Summit-Backpack-65L2.jpg",
       "/images/products/backpacks/Summit-Backpack-65L3.jpg",
       "/images/products/backpacks/Summit-Backpack-65L4.jpg",
-      "/images/products/backpacks/Summit-Backpack-65L5.jpg",
       "/images/products/backpacks/Summit-Backpack-65L6.jpg",
     ],
     description: "Professional-grade 65L backpack designed for multi-day adventures. Features adjustable torso length, multiple access points, and integrated rain cover.",
@@ -957,6 +956,282 @@ export const products: Product[] = [
     inStock: true,
     brand: "Outwest Pro"
   },
+  {
+    id: "pack-006",
+    name: "Summit Trail 45L Backpack",
+    category: "Backpacks & Bags",
+    price: 159.99,
+    image: "/images/products/backpacks/Summit-Trail-45L1.jpg",
+    images: [
+      "/images/products/backpacks/Summit-Trail-45L2.jpg",
+      "/images/products/backpacks/Summit-Trail-45L3.jpg",
+      "/images/products/backpacks/Summit-Trail-45L4.jpg",
+      "/images/products/backpacks/Summit-Trail-45L5.jpg",
+      "/images/products/backpacks/Summit-Trail-45L6.jpg"
+    ],
+    description: "Durable 45L hiking backpack with internal frame support and rain cover. Great for multi-day treks.",
+    specifications: {
+      "Capacity": "45L",
+      "Weight": "3.2 lbs",
+      "Frame": "Internal Aluminum Support",
+      "Dimensions": "26\" x 13\" x 9\"",
+      "Material": "600D Ripstop Polyester",
+      "Extras": "Integrated Rain Cover"
+    },
+    rating: 4.8,
+    reviewCount: 98,
+    inStock: true,
+    brand: "SummitPro"
+  },
+  {
+    id: "pack-007",
+    name: "Urban Explorer Daypack 25L",
+    category: "Backpacks & Bags",
+    price: 89.99,
+    image: "/images/products/backpacks/Urban-Explorer-25L1.jpg",
+    images: [
+      "/images/products/backpacks/Urban-Explorer-25L2.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L3.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L4.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L5.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L6.jpg"
+    ],
+    description: "Stylish daypack with laptop sleeve and water-resistant finish. Perfect for commuting and short hikes.",
+    specifications: {
+      "Capacity": "25L",
+      "Weight": "2.1 lbs",
+      "Laptop Sleeve": "Up to 15\"",
+      "Dimensions": "20\" x 12\" x 8\"",
+      "Material": "Water-Resistant Canvas",
+      "Ventilation": "Padded Mesh Back Panel"
+    },
+    rating: 4.6,
+    reviewCount: 76,
+    inStock: true,
+    brand: "TrailBound"
+  },
+  {
+    id: "pack-008",
+    name: "Alpine Expedition 65L Backpack",
+    category: "Backpacks & Bags",
+    price: 239.99,
+    image: "/images/products/backpacks/Alpine-Expedition-65L1.jpg",
+    images: [
+      "/images/products/backpacks/Alpine-Expedition-65L2.jpg",
+      "/images/products/backpacks/Alpine-Expedition-65L3.jpg",
+      "/images/products/backpacks/Alpine-Expedition-65L4.jpg",
+      "/images/products/backpacks/Alpine-Expedition-65L5.jpg",
+      "/images/products/backpacks/Alpine-Expedition-65L6.jpg"
+    ],
+    description: "High-capacity 65L pack built for expeditions. Features adjustable suspension system and multiple gear loops.",
+    specifications: {
+      "Capacity": "65L",
+      "Weight": "4.5 lbs",
+      "Frame": "Adjustable Internal Frame",
+      "Dimensions": "32\" x 15\" x 12\"",
+      "Material": "500D Cordura Nylon",
+      "Extras": "Ice Axe Loops, Rain Cover"
+    },
+    rating: 4.9,
+    reviewCount: 84,
+    inStock: true,
+    brand: "PeakTrail"
+  },
+  {
+    id: "pack-009",
+    name: "Compact Ultralight Pack 20L",
+    category: "Backpacks & Bags",
+    price: 49.99,
+    image: "/images/products/backpacks/Compact-Ultralight-20L1.jpg",
+    images: [
+      "/images/products/backpacks/Compact-Ultralight-20L2.jpg",
+      "/images/products/backpacks/Compact-Ultralight-20L3.jpg",
+      "/images/products/backpacks/Compact-Ultralight-20L4.jpg",
+      "/images/products/backpacks/Compact-Ultralight-20L5.jpg",
+    ],
+    description: "Ultralight and packable 20L backpack that folds into its own pocket. Ideal for travel and light day trips.",
+    specifications: {
+      "Capacity": "20L",
+      "Weight": "0.7 lbs",
+      "Packable": "Yes (Fits into 6\" Pouch)",
+      "Dimensions": "18\" x 10\" x 7\"",
+      "Material": "30D Ripstop Nylon",
+      "Water Resistance": "Yes"
+    },
+    rating: 4.5,
+    reviewCount: 132,
+    inStock: true,
+    brand: "NatureNest"
+  },
+  {
+    id: "pack-010",
+    name: "Canyon Tactical Backpack 40L",
+    category: "Backpacks & Bags",
+    price: 129.99,
+    image: "/images/products/backpacks/Canyon-Tactical-40L1.jpg",
+    images: [
+      "/images/products/backpacks/Canyon-Tactical-40L2.jpg",
+      "/images/products/backpacks/Canyon-Tactical-40L3.jpg",
+      "/images/products/backpacks/Canyon-Tactical-40L4.jpg",
+      "/images/products/backpacks/Canyon-Tactical-40L5.jpg",
+    ],
+    description: "Rugged 40L tactical pack with MOLLE webbing, hydration compatibility, and heavy-duty zippers.",
+    specifications: {
+      "Capacity": "40L",
+      "Weight": "3.6 lbs",
+      "Hydration": "Compatible (Not Included)",
+      "Dimensions": "24\" x 14\" x 10\"",
+      "Material": "900D Oxford Nylon",
+      "Extras": "MOLLE Webbing, Sternum Strap"
+    },
+    rating: 4.7,
+    reviewCount: 91,
+    inStock: true,
+    brand: "CampVista"
+  },
+  {
+    id: "pack-011",
+    name: "Lakeside Dry Bag 30L",
+    category: "Backpacks & Bags",
+    price: 59.99,
+    image: "/images/products/backpacks/Lakeside-DryBag-30L1.jpg",
+    images: [
+      "/images/products/backpacks/Lakeside-DryBag-30L2.jpg",
+      "/images/products/backpacks/Lakeside-DryBag-30L3.jpg",
+      "/images/products/backpacks/Lakeside-DryBag-30L4.jpg",
+      "/images/products/backpacks/Lakeside-DryBag-30L5.jpg",
+      "/images/products/backpacks/Lakeside-DryBag-30L6.jpg"
+    ],
+    description: "Waterproof roll-top dry bag with backpack straps. Ideal for kayaking, canoeing, and rainy adventures.",
+    specifications: {
+      "Capacity": "30L",
+      "Weight": "2.0 lbs",
+      "Closure": "Roll-Top with Buckle",
+      "Dimensions": "24\" x 12\" x 9\"",
+      "Material": "PVC Tarpaulin",
+      "Waterproof": "100%"
+    },
+    rating: 4.6,
+    reviewCount: 58,
+    inStock: true,
+    brand: "SunTrek"
+  },
+  {
+    id: "pack-012",
+    name: "Forest Trekking Backpack 55L",
+    category: "Backpacks & Bags",
+    price: 199.99,
+    image: "/images/products/backpacks/Forest-Trekking-55L1.jpg",
+    images: [
+      "/images/products/backpacks/Forest-Trekking-55L2.jpg",
+      "/images/products/backpacks/Forest-Trekking-55L3.jpg",
+      "/images/products/backpacks/Forest-Trekking-55L4.jpg",
+      "/images/products/backpacks/Forest-Trekking-55L5.jpg",
+      "/images/products/backpacks/Forest-Trekking-55L6.jpg",
+      "/images/products/backpacks/Forest-Trekking-55L7.jpg",
+    ],
+    description: "Spacious trekking pack with 55L capacity, load lifters, and ventilated back system for comfort on long trails.",
+    specifications: {
+      "Capacity": "55L",
+      "Weight": "4.2 lbs",
+      "Frame": "Internal Support",
+      "Dimensions": "30\" x 14\" x 11\"",
+      "Material": "Ripstop Polyester",
+      "Extras": "Trekking Pole Attachments"
+    },
+    rating: 4.8,
+    reviewCount: 66,
+    inStock: true,
+    brand: "Heritage Camp"
+  },
+  {
+    id: "pack-013",
+    name: "Nomad Convertible Travel Pack 35L",
+    category: "Backpacks & Bags",
+    price: 139.99,
+    image: "/images/products/backpacks/Nomad-Convertible-35L1.jpg",
+    images: [
+      "/images/products/backpacks/Nomad-Convertible-35L2.jpg",
+      "/images/products/backpacks/Nomad-Convertible-35L3.jpg",
+      "/images/products/backpacks/Nomad-Convertible-35L4.jpg",
+      "/images/products/backpacks/Nomad-Convertible-35L5.jpg"
+    ],
+    description: "Convertible backpack/duffel hybrid with stowable straps. Perfect for both city travel and adventure trips.",
+    specifications: {
+      "Capacity": "35L",
+      "Weight": "3.0 lbs",
+      "Laptop Sleeve": "Up to 17\"",
+      "Dimensions": "22\" x 14\" x 9\"",
+      "Material": "500D Polyester",
+      "Extras": "Hideaway Straps"
+    },
+    rating: 4.7,
+    reviewCount: 72,
+    inStock: true,
+    brand: "Outwest Active"
+  },
+  {
+    id: "pack-014",
+    name: "Glacier Mountaineering Pack 70L",
+    category: "Backpacks & Bags",
+    price: 279.99,
+    image: "/images/products/backpacks/Glacier-Mountaineering-70L1.jpg",
+    images: [
+      "/images/products/backpacks/Glacier-Mountaineering-70L2.jpg",
+      "/images/products/backpacks/Glacier-Mountaineering-70L3.jpg",
+      "/images/products/backpacks/Glacier-Mountaineering-70L4.jpg",
+      "/images/products/backpacks/Glacier-Mountaineering-70L5.jpg",
+    ],
+    description: "Technical 70L mountaineering pack with reinforced haul points, rope strap, and crampon pocket.",
+    specifications: {
+      "Capacity": "70L",
+      "Weight": "5.2 lbs",
+      "Frame": "Aluminum Support Frame",
+      "Dimensions": "34\" x 16\" x 12\"",
+      "Material": "1000D Nylon",
+      "Extras": "Rope Strap, Ice Tool Attachments"
+    },
+    rating: 5,
+    reviewCount: 44,
+    inStock: true,
+    brand: "SummitPro"
+  },
+  {
+    id: "pack-015",
+    name: "Trailblazer 70L Expedition Pack",
+    category: "Backpacks & Bags",
+    price: 239.99,
+    originalPrice: 279.99,
+    image: "/images/products/backpacks/Trailblazer-70L1.jpg",
+    images: [
+      "/images/products/backpacks/Trailblazer-70L2.jpg",
+      "/images/products/backpacks/Trailblazer-70L3.jpg",
+      "/images/products/backpacks/Trailblazer-70L4.jpg",
+      "/images/products/backpacks/Trailblazer-70L5.jpg",
+      "/images/products/backpacks/Trailblazer-70L6.jpg",
+      "/images/products/backpacks/Trailblazer-70L7.jpg",
+      "/images/products/backpacks/Trailblazer-70L8.jpg",
+      "/images/products/backpacks/Trailblazer-70L9.jpg",
+      "/images/products/backpacks/Trailblazer-70L10.jpg"
+    ],
+    description: "Large capacity expedition pack designed for multi-day trekking and mountaineering. Features adjustable suspension system and rugged weather-resistant materials.",
+    specifications: {
+      "Capacity": "70L",
+      "Weight": "5.1 lbs",
+      "Dimensions": "32\" x 15\" x 12\"",
+      "Material": "Ripstop Nylon with PU Coating",
+      "Frame": "Internal Aluminum Frame",
+      "Hip Belt": "Padded with Gear Loops",
+      "Hydration": "Compatible with 3L Reservoir"
+    },
+    rating: 5,
+    reviewCount: 87,
+    inStock: true,
+    featured: true,
+    brand: "Summit Gear"
+  },
+  
+
 
   // CAMP KITCHEN
   {
@@ -1066,6 +1341,268 @@ export const products: Product[] = [
     inStock: true,
     brand: "Outwest Classic"
   },
+  {
+    id: "kitchen-006",
+    name: "TrailMate Portable Coffee Press",
+    category: "Camp Kitchen",
+    price: 39.99,
+    image: "/images/products/camp-kitchen/TrailMate-CoffeePress2.jpg",
+    images: [
+      "/images/products/camp-kitchen/TrailMate-CoffeePress1.jpg",
+      "/images/products/camp-kitchen/TrailMate-CoffeePress3.jpg",
+      "/images/products/camp-kitchen/TrailMate-CoffeePress4.jpg",
+      "/images/products/camp-kitchen/TrailMate-CoffeePress5.jpg",
+      "/images/products/camp-kitchen/TrailMate-CoffeePress6.jpg"
+    ],
+    description: "Durable, lightweight coffee press perfect for brewing fresh coffee outdoors. BPA-free construction and easy clean-up.",
+    specifications: {
+      "Capacity": "20 oz",
+      "Weight": "0.9 lbs",
+      "Material": "BPA-Free Plastic",
+      "Dimensions": "7\" x 4\"",
+      "Dishwasher Safe": "Yes"
+    },
+    rating: 5,
+    reviewCount: 112,
+    inStock: true,
+    brand: "Summit Gear"
+  },
+  {
+    id: "kitchen-007",
+    name: "Summit Chef 2-Burner Stove",
+    category: "Camp Kitchen",
+    price: 129.99,
+    originalPrice: 159.99,
+    image: "/images/products/camp-kitchen/Summit-Chef-2Burner1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Summit-Chef-2Burner2.jpg",
+      "/images/products/camp-kitchen/Summit-Chef-2Burner3.jpg",
+      "/images/products/camp-kitchen/Summit-Chef-2Burner4.jpg",
+      "/images/products/camp-kitchen/Summit-Chef-2Burner5.jpg",
+      "/images/products/camp-kitchen/Summit-Chef-2Burner6.jpg"
+    ],
+    description: "Powerful 2-burner propane stove with adjustable flame control. Perfect for group camping meals.",
+    specifications: {
+      "Fuel Type": "Propane",
+      "Weight": "10.5 lbs",
+      "BTU": "20,000 (10,000 each burner)",
+      "Dimensions": "21\" x 12\" x 4\"",
+      "Ignition": "Manual",
+      "Wind Screen": "Yes"
+    },
+    rating: 4,
+    reviewCount: 89,
+    inStock: true,
+    featured: true,
+    brand: "CampMaster"
+  },
+  {
+    id: "kitchen-008",
+    name: "Titanium Compact Cookset",
+    category: "Camp Kitchen",
+    price: 79.99,
+    image: "/images/products/camp-kitchen/Titanium-Cookset1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Titanium-Cookset1.jpg",
+      "/images/products/camp-kitchen/Titanium-Cookset2.jpg",
+      "/images/products/camp-kitchen/Titanium-Cookset3.jpg"
+    ],
+    description: "Ultralight titanium pot and pan set with foldable handles. Ideal for backpacking and minimalists.",
+    specifications: {
+      "Material": "Titanium",
+      "Weight": "0.85 lbs",
+      "Pot Capacity": "900 ml",
+      "Pan Capacity": "500 ml",
+      "Nesting": "Yes",
+      "Handles": "Foldable"
+    },
+    rating: 5,
+    reviewCount: 76,
+    inStock: true,
+    brand: "TrailLite"
+  },
+  {
+    id: "kitchen-009",
+    name: "EcoBrew Biodegradable Utensil Set",
+    category: "Camp Kitchen",
+    price: 24.99,
+    image: "/images/products/camp-kitchen/EcoBrew-Utensils1.jpg",
+    images: [
+      "/images/products/camp-kitchen/EcoBrew-Utensils2.jpg",
+      "/images/products/camp-kitchen/EcoBrew-Utensils3.jpg",
+      "/images/products/camp-kitchen/EcoBrew-Utensils4.jpg",
+      "/images/products/camp-kitchen/EcoBrew-Utensils5.jpg",
+      "/images/products/camp-kitchen/EcoBrew-Utensils7.jpg",
+      "/images/products/camp-kitchen/EcoBrew-Utensils8.jpg"
+    ],
+    description: "Eco-friendly utensil set made from biodegradable materials. Includes fork, knife, spoon, and chopsticks.",
+    specifications: {
+      "Material": "Biodegradable Polymer",
+      "Weight": "0.3 lbs",
+      "Set": "4 Pieces",
+      "Dishwasher Safe": "Yes",
+      "Case": "Included"
+    },
+    rating: 4,
+    reviewCount: 54,
+    inStock: true,
+    brand: "EcoCamp"
+  },
+  {
+    id: "kitchen-010",
+    name: "Adventure Cook Station",
+    category: "Camp Kitchen",
+    price: 199.99,
+    image: "/images/products/camp-kitchen/Adventure-Cook-Station2.jpg",
+    images: [
+      "/images/products/camp-kitchen/Adventure-Cook-Station1.jpg",
+      "/images/products/camp-kitchen/Adventure-Cook-Station3.jpg",
+      "/images/products/camp-kitchen/Adventure-Cook-Station4.jpg",
+      "/images/products/camp-kitchen/Adventure-Cook-Station5.jpg",
+      "/images/products/camp-kitchen/Adventure-Cook-Station6.jpg",
+      "/images/products/camp-kitchen/Adventure-Cook-Station7.jpg",
+      "/images/products/camp-kitchen/Adventure-Cook-Station8.jpg"
+    ],
+    description: "Foldable camp kitchen station with counter space, storage racks, and lantern hook.",
+    specifications: {
+      "Weight": "13 lbs",
+      "Dimensions": "56\" x 18\" x 32\"",
+      "Material": "Aluminum + Fabric",
+      "Storage": "3 Shelves + Counter",
+      "Foldable": "Yes"
+    },
+    rating: 5,
+    reviewCount: 68,
+    inStock: true,
+    featured: true,
+    brand: "CampMaster"
+  },
+  {
+    id: "kitchen-011",
+    name: "Insulated Cooler Box 45QT",
+    category: "Camp Kitchen",
+    price: 159.99,
+    image: "/images/products/camp-kitchen/Cooler-45QT1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Cooler-45QT2.jpg",
+      "/images/products/camp-kitchen/Cooler-45QT3.jpg",
+      "/images/products/camp-kitchen/Cooler-45QT4.jpg",
+      "/images/products/camp-kitchen/Cooler-45QT5.jpg"
+    ],
+    description: "Heavy-duty cooler with 4-day ice retention and rugged wheels for easy transport.",
+    specifications: {
+      "Capacity": "45 Quarts",
+      "Weight": "18 lbs",
+      "Dimensions": "24\" x 16\" x 15\"",
+      "Insulation": "Thick Polyurethane",
+      "Ice Retention": "Up to 4 Days"
+    },
+    rating: 5,
+    reviewCount: 134,
+    inStock: true,
+    brand: "ChillPro"
+  },
+  {
+    id: "kitchen-012",
+    name: "Portable Camp Grill",
+    category: "Camp Kitchen",
+    price: 99.99,
+    image: "/images/products/camp-kitchen/Portable-Grill1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Portable-Grill2.jpg",
+      "/images/products/camp-kitchen/Portable-Grill3.jpg",
+      "/images/products/camp-kitchen/Portable-Grill4.jpg",
+      "/images/products/camp-kitchen/Portable-Grill5.jpg"
+    ],
+    description: "Compact charcoal grill with foldable legs and carry case. Perfect for campfire cooking.",
+    specifications: {
+      "Fuel Type": "Charcoal",
+      "Weight": "7.5 lbs",
+      "Dimensions": "16\" x 12\" x 10\"",
+      "Cooking Surface": "150 sq in",
+      "Foldable": "Yes"
+    },
+    rating: 4,
+    reviewCount: 92,
+    inStock: true,
+    brand: "GrillMate"
+  },
+  {
+    id: "kitchen-013",
+    name: "Collapsible Sink Basin",
+    category: "Camp Kitchen",
+    price: 29.99,
+    image: "/images/products/camp-kitchen/Collapsible-Sink1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Collapsible-Sink2.jpg",
+      "/images/products/camp-kitchen/Collapsible-Sink3.jpg",
+      "/images/products/camp-kitchen/Collapsible-Sink4.jpg",
+      "/images/products/camp-kitchen/Collapsible-Sink5.jpg",
+      "/images/products/camp-kitchen/Collapsible-Sink6.jpg"
+    ],
+    description: "Durable collapsible sink for washing dishes or carrying water. Folds flat for easy packing.",
+    specifications: {
+      "Capacity": "15L",
+      "Weight": "0.6 lbs",
+      "Material": "Silicone + Plastic",
+      "Dimensions": "14\" x 12\" x 8\"",
+      "Collapsible": "Yes"
+    },
+    rating: 5,
+    reviewCount: 45,
+    inStock: true,
+    brand: "TrailLite"
+  },
+  {
+    id: "kitchen-014",
+    name: "Camp Mess Kit 4-Person",
+    category: "Camp Kitchen",
+    price: 49.99,
+    image: "/images/products/camp-kitchen/Mess-Kit1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Mess-Kit2.jpg",
+      "/images/products/camp-kitchen/Mess-Kit3.jpg",
+      "/images/products/camp-kitchen/Mess-Kit4.jpg",
+      "/images/products/camp-kitchen/Mess-Kit5.jpg",
+      "/images/products/camp-kitchen/Mess-Kit6.jpg",
+    ],
+    description: "Complete mess kit for 4 people including plates, bowls, cups, and utensils. Comes with a compact carry bag.",
+    specifications: {
+      "Set": "16 Pieces",
+      "Weight": "3.2 lbs",
+      "Material": "Polypropylene (BPA-Free)",
+      "Dishwasher Safe": "Yes",
+      "Carry Case": "Included"
+    },
+    rating: 5,
+    reviewCount: 101,
+    inStock: true,
+    brand: "Summit Gear"
+  },
+  {
+    id: "kitchen-015",
+    name: "Thermal Insulated Food Container",
+    category: "Camp Kitchen",
+    price: 34.99,
+    image: "/images/products/camp-kitchen/Food-Container1.jpg",
+    images: [
+      "/images/products/camp-kitchen/Food-Container1.jpg",
+      "/images/products/camp-kitchen/Food-Container2.jpg"
+    ],
+    description: "Keeps food hot for up to 6 hours or cold for 12 hours. Stainless steel interior with leak-proof lid.",
+    specifications: {
+      "Capacity": "1.2L",
+      "Weight": "1.3 lbs",
+      "Material": "Stainless Steel + Plastic",
+      "Insulation": "Double-Wall Vacuum",
+      "Leak-Proof": "Yes"
+    },
+    rating: 5,
+    reviewCount: 73,
+    inStock: true,
+    brand: "Outwest Pro"
+  },
+  
 
   // CAMP FURNITURE
   {
@@ -1207,36 +1744,36 @@ export const products: Product[] = [
     inStock: true,
     brand: "Outwest Quick"
   },
-  {
-    id: "sleep-005",
-    name: "Ultralight Down Sleeping Bag",
-    category: "Sleeping Bags & Pads",
-    price: 399.99,
-    image: "/images/products/sleeping-bags/Ultralight-Sleeping-Bag1.jpg",
-    images: [
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag2.jpg",
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag3.jpg",
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag4.jpg",
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag5.jpg",
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag6.jpg",
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag7.jpg",
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag8.jpg",
-      "/images/products/sleeping-bags/Ultralight-Sleeping-Bag9.jpg",
-    ],
-    description: "Premium 800-fill down sleeping bag for extreme lightweight backpacking. Temperature rated to 0°F.",
-    specifications: {
-      "Temperature Rating": "0°F",
-      "Fill Type": "800 Fill Down",
-      "Weight": "2.1 lbs",
-      "Length": "Regular (6'0\")",
-      "Stuff Sack": "6\" x 12\"",
-      "Shell Material": "10D Nylon"
-    },
-    rating: 5,
-    reviewCount: 67,
-    inStock: true,
-    brand: "Outwest Elite"
-  },
+  // {
+  //   id: "sleep-005",
+  //   name: "Ultralight Down Sleeping Bag",
+  //   category: "Sleeping Bags & Pads",
+  //   price: 399.99,
+  //   image: "/images/products/sleeping-bags/Ultralight-Sleeping-Bag1.jpg",
+  //   images: [
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag2.jpg",
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag3.jpg",
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag4.jpg",
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag5.jpg",
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag6.jpg",
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag7.jpg",
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag8.jpg",
+  //     "/images/products/sleeping-bags/Ultralight-Sleeping-Bag9.jpg",
+  //   ],
+  //   description: "Premium 800-fill down sleeping bag for extreme lightweight backpacking. Temperature rated to 0°F.",
+  //   specifications: {
+  //     "Temperature Rating": "0°F",
+  //     "Fill Type": "800 Fill Down",
+  //     "Weight": "2.1 lbs",
+  //     "Length": "Regular (6'0\")",
+  //     "Stuff Sack": "6\" x 12\"",
+  //     "Shell Material": "10D Nylon"
+  //   },
+  //   rating: 5,
+  //   reviewCount: 67,
+  //   inStock: true,
+  //   brand: "Outwest Elite"
+  // },
   {
     id: "pack-005",
     name: "Hydration Pack 15L",

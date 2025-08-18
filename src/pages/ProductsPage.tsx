@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Filter, Grid, List } from "lucide-react";
 import { products, categories } from "../data/products";
 import ProductCard from "../components/ProductCard";
 
 const ProductsPage: React.FC = () => {
+  const ITEMS_PER_PAGE = 12;
   const [searchParams, setSearchParams] = useSearchParams();
   const [filters, setFilters] = useState({
     category: searchParams.get("category") || "",
@@ -17,6 +18,7 @@ const ProductsPage: React.FC = () => {
   const [sortBy, setSortBy] = useState("featured");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [showFilters, setShowFilters] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
   // Read search term from URL
   const query = (searchParams.get("q") || "").trim().toLowerCase();
@@ -63,6 +65,14 @@ const ProductsPage: React.FC = () => {
     }
 
     return filtered;
+  }, [filters, sortBy, query]);
+
+  const visibleProducts = useMemo(() => {
+    return filteredProducts.slice(0, visibleCount);
+  }, [filteredProducts, visibleCount]);
+
+  useEffect(() => {
+    setVisibleCount(ITEMS_PER_PAGE);
   }, [filters, sortBy, query]);
 
   const handleFilterChange = (key: string, value: string | boolean) => {
@@ -281,10 +291,22 @@ const ProductsPage: React.FC = () => {
                   : "grid-cols-1"
               }`}
             >
-              {filteredProducts.map((product) => (
+              {visibleProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>
+
+            {filteredProducts.length > visibleCount && (
+              <div className="mt-8 flex items-center justify-center">
+                <button
+                  onClick={() => setVisibleCount((prev) => prev + ITEMS_PER_PAGE)}
+                  className="px-6 py-3 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition-colors disabled:opacity-60"
+                  aria-label="Load more products"
+                >
+                  Load More ({Math.min(ITEMS_PER_PAGE, filteredProducts.length - visibleCount)})
+                </button>
+              </div>
+            )}
 
             {filteredProducts.length === 0 && (
               <div className="text-center py-16">

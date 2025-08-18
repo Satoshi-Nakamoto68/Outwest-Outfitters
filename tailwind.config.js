@@ -6,6 +6,7 @@ export default {
       animation: {
         'fadeIn': 'fadeIn 0.6s ease-out',
         'slideUp': 'slideUp 0.6s ease-out',
+        'shimmer': 'shimmer 1.6s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -15,6 +16,10 @@ export default {
         slideUp: {
           '0%': { opacity: '0', transform: 'translateY(40px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        shimmer: {
+          '0%': { 'background-position': '0% 0%' },
+          '100%': { 'background-position': '200% 0%' },
         },
       },
     },
