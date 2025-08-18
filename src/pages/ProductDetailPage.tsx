@@ -365,7 +365,7 @@ const ProductDetailPage: React.FC = () => {
         </div>
 
         {/* Customer Reviews */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Customer Reviews
           </h2>
@@ -401,7 +401,7 @@ const ProductDetailPage: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Image Modal/Lightbox */}

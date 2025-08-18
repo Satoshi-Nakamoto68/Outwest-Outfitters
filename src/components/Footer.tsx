@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center mb-4 group">
               <img
-                src="/images/Logo-Outwest-Outfitters.png"
+                src="/images/logo-outwest-outfitters.png"
                 alt="Outwest Outfitters"
                 className="h-24 w-auto group-hover:opacity-80 transition-opacity duration-200"
               />

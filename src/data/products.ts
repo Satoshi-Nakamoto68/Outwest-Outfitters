@@ -204,11 +204,17 @@ export const products: Product[] = [
     category: "Tents",
     price: 149.99,
     originalPrice: 179.99,
-    image: "/images/products/tents/Pine-Ridge-Tent1.jpg",
+    image: "/images/products/tents/Ridge-Ultralight-Tent1.webp",
     images: [
-      "/images/products/tents/Pine-Ridge-Tent1.jpg",
-      "/images/products/tents/Pine-Ridge-Tent2.jpg",
-      "/images/products/tents/Pine-Ridge-Tent3.jpg"
+      "/images/products/tents/Ridge-Ultralight-Tent2.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent3.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent4.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent5.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent6.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent7.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent8.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent9.webp",
+      "/images/products/tents/Ridge-Ultralight-Tent10.webp",
     ],
     description: "An ultralight solo tent designed for minimalists. Packs down small and sets up in minutes, offering excellent rain protection.",
     specifications: {
@@ -232,13 +238,12 @@ export const products: Product[] = [
     category: "Tents",
     price: 699.99,
     originalPrice: 799.99,
-    image: "/images/products/tents/Everest-Shield-Tent1.jpg",
+    image: "/images/products/tents/Expedition-Tent5.jpg",
     images: [
-      "/images/products/tents/Everest-Shield-Tent1.jpg",
-      "/images/products/tents/Everest-Shield-Tent2.jpg",
-      "/images/products/tents/Everest-Shield-Tent3.jpg",
-      "/images/products/tents/Everest-Shield-Tent4.jpg",
-      "/images/products/tents/Everest-Shield-Tent5.jpg"
+      "/images/products/tents/Expedition-Tent1.jpg",
+      "/images/products/tents/Expedition-Tent2.jpg",
+      "/images/products/tents/Expedition-Tent3.jpg",
+      "/images/products/tents/Expedition-Tent4.jpg",
     ],
     description: "Built for extreme conditions, this 4-season tent offers unbeatable wind and snow protection for serious mountaineers.",
     specifications: {
@@ -262,11 +267,13 @@ export const products: Product[] = [
     category: "Tents",
     price: 159.99,
     originalPrice: 199.99,
-    image: "/images/products/tents/Riverbend-Shelter1.jpg",
+    image: "/images/products/tents/Screen-House-Shelter5.jpg",
     images: [
-      "/images/products/tents/Riverbend-Shelter1.jpg",
-      "/images/products/tents/Riverbend-Shelter2.jpg",
-      "/images/products/tents/Riverbend-Shelter3.jpg"
+      "/images/products/tents/Screen-House-Shelter1.jpg",
+      "/images/products/tents/Screen-House-Shelter2.jpg",
+      "/images/products/tents/Screen-House-Shelter3.jpg",
+      "/images/products/tents/Screen-House-Shelter4.jpg",
+      "/images/products/tents/Screen-House-Shelter6.jpg",
     ],
     description: "A spacious screen shelter perfect for picnics and bug-free lounging at the campsite.",
     specifications: {
@@ -290,12 +297,13 @@ export const products: Product[] = [
     category: "Tents",
     price: 249.99,
     originalPrice: 299.99,
-    image: "/images/products/tents/Glacier-View-Tent1.jpg",
+    image: "/images/products/tents/View-Dome-Tent1.jpg",
     images: [
-      "/images/products/tents/Glacier-View-Tent1.jpg",
-      "/images/products/tents/Glacier-View-Tent2.jpg",
-      "/images/products/tents/Glacier-View-Tent3.jpg",
-      "/images/products/tents/Glacier-View-Tent4.jpg"
+      "/images/products/tents/View-Dome-Tent2.jpg",
+      "/images/products/tents/View-Dome-Tent3.jpg",
+      "/images/products/tents/View-Dome-Tent4.jpg",
+      "/images/products/tents/View-Dome-Tent5.jpg",
+      "/images/products/tents/View-Dome-Tent6.jpg",
     ],
     description: "A durable dome tent with extra headroom and large vestibules, ideal for weekend camping trips.",
     specifications: {
@@ -319,11 +327,12 @@ export const products: Product[] = [
     category: "Tents",
     price: 319.99,
     originalPrice: 379.99,
-    image: "/images/products/tents/Sahara-Shade-Tent1.jpg",
+    image: "/images/products/tents/Shade-Deser-Tent1.jpg",
     images: [
-      "/images/products/tents/Sahara-Shade-Tent1.jpg",
-      "/images/products/tents/Sahara-Shade-Tent2.jpg",
-      "/images/products/tents/Sahara-Shade-Tent3.jpg"
+      "/images/products/tents/Shade-Deser-Tent2.jpg",
+      "/images/products/tents/Shade-Deser-Tent3.jpg",
+      "/images/products/tents/Shade-Deser-Tent4.jpg",
+      "/images/products/tents/Shade-Deser-Tent5.jpg",
     ],
     description: "Specially designed for hot climates, this tent features reflective fabric and extra ventilation panels.",
     specifications: {
@@ -347,12 +356,12 @@ export const products: Product[] = [
     category: "Tents",
     price: 549.99,
     originalPrice: 629.99,
-    image: "/images/products/tents/Forest-Haven-Tent1.jpg",
+    image: "/images/products/tents/Haven-Canvas-Tent2.jpg",
     images: [
-      "/images/products/tents/Forest-Haven-Tent1.jpg",
-      "/images/products/tents/Forest-Haven-Tent2.jpg",
-      "/images/products/tents/Forest-Haven-Tent3.jpg",
-      "/images/products/tents/Forest-Haven-Tent4.jpg"
+      "/images/products/tents/Haven-Canvas-Tent1.jpg",
+      "/images/products/tents/Haven-Canvas-Tent3.jpg",
+      "/images/products/tents/Haven-Canvas-Tent5.jpg",
+      "/images/products/tents/Haven-Canvas-Tent6.jpg",
     ],
     description: "Classic canvas tent offering excellent insulation and a cozy feel for extended camping trips.",
     specifications: {
@@ -376,12 +385,15 @@ export const products: Product[] = [
     category: "Tents",
     price: 379.99,
     originalPrice: 449.99,
-    image: "/images/products/tents/Mountain-Trail-Tent1.jpg",
+    image: "/images/products/tents/Trail-Tunnel-Tent8.jpg",
     images: [
-      "/images/products/tents/Mountain-Trail-Tent1.jpg",
-      "/images/products/tents/Mountain-Trail-Tent2.jpg",
-      "/images/products/tents/Mountain-Trail-Tent3.jpg",
-      "/images/products/tents/Mountain-Trail-Tent4.jpg"
+      "/images/products/tents/Trail-Tunnel-Tent1.jpg",
+      "/images/products/tents/Trail-Tunnel-Tent3.jpg",
+      "/images/products/tents/Trail-Tunnel-Tent4.jpg",
+      "/images/products/tents/Trail-Tunnel-Tent5.jpg",
+      "/images/products/tents/Trail-Tunnel-Tent6.jpg",
+      "/images/products/tents/Trail-Tunnel-Tent7.jpg",
+      "/images/products/tents/Trail-Tunnel-Tent2.jpg",
     ],
     description: "Tunnel-shaped tent offering excellent wind stability and multiple entrances for easy access.",
     specifications: {
@@ -405,13 +417,12 @@ export const products: Product[] = [
     category: "Tents",
     price: 499.99,
     originalPrice: 579.99,
-    image: "/images/products/tents/Lakeside-Retreat-Tent1.jpg",
+    image: "/images/products/tents/Lakesid-Retreat-Tent2.jpg",
     images: [
-      "/images/products/tents/Lakeside-Retreat-Tent1.jpg",
-      "/images/products/tents/Lakeside-Retreat-Tent2.jpg",
-      "/images/products/tents/Lakeside-Retreat-Tent3.jpg",
-      "/images/products/tents/Lakeside-Retreat-Tent4.jpg",
-      "/images/products/tents/Lakeside-Retreat-Tent5.jpg"
+      "/images/products/tents/Lakesid-Retreat-Tent1.jpg",
+      "/images/products/tents/Lakesid-Retreat-Tent3.jpg",
+      "/images/products/tents/Lakesid-Retreat-Tent4.jpg",
+      "/images/products/tents/Lakesid-Retreat-Tent5.jpg",
     ],
     description: "Spacious cabin-style tent with tall ceilings and large windows for a comfortable glamping experience.",
     specifications: {
@@ -541,6 +552,298 @@ export const products: Product[] = [
     inStock: true,
     brand: "Outwest Pro"
   },
+  {
+    id: "sleep-005",
+    name: "EverRest Mummy Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 179.99,
+    originalPrice: 219.99,
+    image: "/images/products/sleeping-bags/EverRest-Mummy-sleep1.jpg",
+    images: [
+      "/images/products/sleeping-bags/EverRest-Mummy-sleep2.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy-sleep3.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy-sleep4.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy-sleep5.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy-sleep6.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy-sleep7.jpg",
+    ],
+    description: "Lightweight mummy-style sleeping bag rated for 25°F with draft collar and ergonomic hood for maximum warmth.",
+    specifications: {
+      "Temperature Rating": "25°F",
+      "Fill Type": "Synthetic Hollow Fiber",
+      "Weight": "3.2 lbs",
+      "Length": "Regular (6'0\")",
+      "Stuff Sack": "9\" x 15\"",
+      "Shell Material": "Ripstop Polyester"
+    },
+    rating: 4.7,
+    reviewCount: 112,
+    inStock: true,
+    featured: false,
+    brand: "TrailBound"
+  },
+  {
+    id: "sleep-006",
+    name: "Summit UltraLight Down Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 329.99,
+    originalPrice: 389.99,
+    image: "/images/products/sleeping-bags/Summit-UltraLight-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Summit-UltraLight-Bag2.jpg",
+      "/images/products/sleeping-bags/Summit-UltraLight-Bag3.jpg",
+      "/images/products/sleeping-bags/Summit-UltraLight-Bag4.jpg",
+      "/images/products/sleeping-bags/Summit-UltraLight-Bag5.jpg",
+      "/images/products/sleeping-bags/Summit-UltraLight-Bag6.jpg",
+      "/images/products/sleeping-bags/Summit-UltraLight-Bag7.jpg",
+    ],
+    description: "Ultralight 850-fill down sleeping bag rated to 15°F. Perfect for backpackers needing warmth without weight.",
+    specifications: {
+      "Temperature Rating": "15°F",
+      "Fill Type": "850 Fill Goose Down",
+      "Weight": "1.9 lbs",
+      "Length": "Long (6'6\")",
+      "Stuff Sack": "7\" x 14\"",
+      "Shell Material": "20D Nylon"
+    },
+    rating: 4.9,
+    reviewCount: 67,
+    inStock: true,
+    featured: true,
+    brand: "SummitPro"
+  },
+  {
+    id: "sleep-007",
+    name: "Canyon Comfort Double Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 199.99,
+    originalPrice: 249.99,
+    image: "/images/products/sleeping-bags/Canyon-Double-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Canyon-Double-Bag2.jpg",
+      "/images/products/sleeping-bags/Canyon-Double-Bag3.jpg",
+      "/images/products/sleeping-bags/Canyon-Double-Bag4.jpg",
+      "/images/products/sleeping-bags/Canyon-Double-Bag5.jpg",
+      "/images/products/sleeping-bags/Canyon-Double-Bag6.jpg"
+    ],
+    description: "Spacious double sleeping bag for couples, rated to 30°F with quilted interior for comfort.",
+    specifications: {
+      "Temperature Rating": "30°F",
+      "Fill Type": "Synthetic Insulation",
+      "Weight": "7.5 lbs",
+      "Length": "Queen Size",
+      "Stuff Sack": "15\" x 25\"",
+      "Shell Material": "Polyester Taffeta"
+    },
+    rating: 4.6,
+    reviewCount: 88,
+    inStock: true,
+    featured: false,
+    brand: "CampVista"
+  },
+  {
+    id: "sleep-008",
+    name: "Alpine Shield 4-Season Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 449.99,
+    originalPrice: 529.99,
+    image: "/images/products/sleeping-bags/Season-Sleeping-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Season-Sleeping-Bag2.jpg",
+      "/images/products/sleeping-bags/Season-Sleeping-Bag3.jpg",
+      "/images/products/sleeping-bags/Season-Sleeping-Bag4.jpg",
+    ],
+    description: "Expedition-grade 4-season sleeping bag rated to -10°F. Ideal for mountaineering and extreme cold adventures.",
+    specifications: {
+      "Temperature Rating": "-10°F",
+      "Fill Type": "800 Fill Hydrophobic Down",
+      "Weight": "4.5 lbs",
+      "Length": "Long (6'6\")",
+      "Stuff Sack": "10\" x 18\"",
+      "Shell Material": "30D Ripstop Nylon"
+    },
+    rating: 5,
+    reviewCount: 54,
+    inStock: true,
+    featured: true,
+    brand: "SummitPro"
+  },
+  {
+    id: "sleep-009",
+    name: "TrailLite Self-Inflating Sleeping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 89.99,
+    originalPrice: 119.99,
+    image: "/images/products/sleeping-bags/TrailLite-Pad1.jpg",
+    images: [
+      "/images/products/sleeping-bags/TrailLite-Pad2.jpg",
+      "/images/products/sleeping-bags/TrailLite-Pad3.jpg",
+      "/images/products/sleeping-bags/TrailLite-Pad4.jpg",
+      "/images/products/sleeping-bags/TrailLite-Pad5.jpg",
+      "/images/products/sleeping-bags/TrailLite-Pad6.jpg"
+    ],
+    description: "Durable self-inflating sleeping pad with 1.5-inch foam core for comfort and insulation.",
+    specifications: {
+      "R-Value": "3.2",
+      "Weight": "2.1 lbs",
+      "Dimensions": "72\" x 20\"",
+      "Packed Size": "6\" x 20\"",
+      "Material": "Polyurethane Foam"
+    },
+    rating: 4.5,
+    reviewCount: 123,
+    inStock: true,
+    featured: false,
+    brand: "PeakTrail"
+  },
+  {
+    id: "sleep-010",
+    name: "Evergreen Foam Roll Sleeping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 39.99,
+    originalPrice: 49.99,
+    image: "/images/products/sleeping-bags/Evergreen-Foam-Pad1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Evergreen-Foam-Pad2.png",
+      "/images/products/sleeping-bags/Evergreen-Foam-Pad3.jpg",
+      "/images/products/sleeping-bags/Evergreen-Foam-Pad4.jpg",
+      "/images/products/sleeping-bags/Evergreen-Foam-Pad5.jpg",
+      "/images/products/sleeping-bags/Evergreen-Foam-Pad6.jpg",
+      "/images/products/sleeping-bags/Evergreen-Foam-Pad7.jpg",
+      "/images/products/sleeping-bags/Evergreen-Foam-Pad8.png",
+    ],
+    description: "Lightweight closed-cell foam sleeping pad offering insulation and durability at an affordable price.",
+    specifications: {
+      "R-Value": "2.0",
+      "Weight": "1.3 lbs",
+      "Dimensions": "72\" x 22\"",
+      "Packed Size": "22\" x 7\" (rolled)",
+      "Material": "Closed-cell Foam"
+    },
+    rating: 4.3,
+    reviewCount: 76,
+    inStock: true,
+    featured: false,
+    brand: "NatureNest"
+  },
+  {
+    id: "sleep-011",
+    name: "Glacier Rest Insulated Air Pad",
+    category: "Sleeping Bags & Pads",
+    price: 139.99,
+    originalPrice: 169.99,
+    image: "/images/products/sleeping-bags/Rest-Insulated-Air1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Rest-Insulated-Air2.jpg",
+      "/images/products/sleeping-bags/Rest-Insulated-Air3.jpg",
+      "/images/products/sleeping-bags/Rest-Insulated-Air4.jpg",
+      "/images/products/sleeping-bags/Rest-Insulated-Air5.jpg",
+    ],
+    description: "Inflatable sleeping pad with synthetic insulation for cold-weather camping. Compact and lightweight for backpacking.",
+    specifications: {
+      "R-Value": "4.0",
+      "Weight": "1.8 lbs",
+      "Dimensions": "72\" x 21\"",
+      "Packed Size": "5\" x 10\"",
+      "Material": "Nylon/Polyester"
+    },
+    rating: 4.7,
+    reviewCount: 64,
+    inStock: true,
+    featured: true,
+    brand: "SunTrek"
+  },
+  {
+    id: "sleep-012",
+    name: "Riverbend Kids Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 69.99,
+    originalPrice: 89.99,
+    image: "/images/products/sleeping-bags/Riverbend-Kids-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Riverbend-Kids-Bag2.jpg",
+      "/images/products/sleeping-bags/Riverbend-Kids-Bag3.jpg",
+      "/images/products/sleeping-bags/Riverbend-Kids-Bag4.jpg",
+      "/images/products/sleeping-bags/Riverbend-Kids-Bag5.jpg",
+      "/images/products/sleeping-bags/Riverbend-Kids-Bag6.jpg",
+      "/images/products/sleeping-bags/Riverbend-Kids-Bag7.jpg"
+    ],
+    description: "Child-friendly sleeping bag with fun design, rated for 40°F. Machine washable and durable.",
+    specifications: {
+      "Temperature Rating": "40°F",
+      "Fill Type": "Synthetic",
+      "Weight": "2.0 lbs",
+      "Length": "5'0\"",
+      "Stuff Sack": "8\" x 14\"",
+      "Shell Material": "Polyester"
+    },
+    rating: 4.8,
+    reviewCount: 51,
+    inStock: true,
+    featured: false,
+    brand: "CampVista"
+  },
+  {
+    id: "sleep-013",
+    name: "CozyNest Rectangular Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 119.99,
+    originalPrice: 149.99,
+    image: "/images/products/sleeping-bags/CozyNest-Rectangular-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag2.jpg",
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag3.jpg",
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag4.jpg",
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag5.jpg",
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag6.jpg",
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag7.jpg",
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag8.jpg",
+      "/images/products/sleeping-bags/CozyNest-Rectangular-Bag9.jpg",
+    ],
+    description: "Spacious rectangular sleeping bag for comfort and ventilation. Rated for 35°F.",
+    specifications: {
+      "Temperature Rating": "35°F",
+      "Fill Type": "Synthetic",
+      "Weight": "3.6 lbs",
+      "Length": "6'4\"",
+      "Stuff Sack": "10\" x 17\"",
+      "Shell Material": "Polyester"
+    },
+    rating: 4.4,
+    reviewCount: 73,
+    inStock: true,
+    featured: false,
+    brand: "Heritage Camp"
+  },
+  {
+    id: "sleep-014",
+    name: "Nomad Expedition Sleeping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 189.99,
+    originalPrice: 229.99,
+    image: "/images/products/sleeping-bags/Expedition-Sleeping-Pad1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Expedition-Sleeping-Pad2.jpg",
+      "/images/products/sleeping-bags/Expedition-Sleeping-Pad3.jpg",
+      "/images/products/sleeping-bags/Expedition-Sleeping-Pad4.jpg",
+      "/images/products/sleeping-bags/Expedition-Sleeping-Pad5.jpg",
+      "/images/products/sleeping-bags/Expedition-Sleeping-Pad6.jpg",
+    ],
+    description: "Heavy-duty inflatable pad designed for long expeditions. Features reinforced fabric and high R-value for cold climates.",
+    specifications: {
+      "R-Value": "5.8",
+      "Weight": "2.9 lbs",
+      "Dimensions": "78\" x 25\"",
+      "Packed Size": "7\" x 12\"",
+      "Material": "TPU-Coated Nylon"
+    },
+    rating: 4.9,
+    reviewCount: 45,
+    inStock: true,
+    featured: true,
+    brand: "WindPeak"
+  },
+
 
   // BACKPACKS & BAGS
   {
