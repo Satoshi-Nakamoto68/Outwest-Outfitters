@@ -86,7 +86,6 @@ export const products: Product[] = [
     price: 449.99,
     image: "/images/products/tents/Family-Camp-Tent1.jpg",
     images: [
-      "/images/products/tents/Family-Camp-Tent1.jpg",
       "/images/products/tents/Family-Camp-Tent2.jpg",
       "/images/products/tents/Family-Camp-Tent3.jpg",
       "/images/products/tents/Family-Camp-Tent4.jpg",
@@ -1586,8 +1585,11 @@ export const products: Product[] = [
     price: 34.99,
     image: "/images/products/camp-kitchen/Food-Container1.jpg",
     images: [
-      "/images/products/camp-kitchen/Food-Container1.jpg",
-      "/images/products/camp-kitchen/Food-Container2.jpg"
+      "/images/products/camp-kitchen/Food-Container2.jpg",
+      "/images/products/camp-kitchen/Food-Container3.jpg",
+      "/images/products/camp-kitchen/Food-Container4.jpg",
+      "/images/products/camp-kitchen/Food-Container5.jpg",
+      "/images/products/camp-kitchen/Food-Container6.jpg"
     ],
     description: "Keeps food hot for up to 6 hours or cold for 12 hours. Stainless steel interior with leak-proof lid.",
     specifications: {
@@ -1714,6 +1716,279 @@ export const products: Product[] = [
     inStock: true,
     brand: "Outwest Pro"
   },
+  {
+    id: "furniture-006",
+    name: "Lightweight Folding Camping Table",
+    category: "Camp Furniture",
+    price: 89.99,
+    originalPrice: 109.99,
+    image: "/images/products/camp-furniture/Folding-Table1.jpg",
+    images: [
+      "/images/products/camp-furniture/Folding-Table2.jpg",
+      "/images/products/camp-furniture/Folding-Table3.jpg",
+      "/images/products/camp-furniture/Folding-Table4.jpg",
+    ],
+    description: "Compact aluminum folding table with adjustable height. Perfect for meals, card games, or camp cooking prep.",
+    specifications: {
+      "Weight Capacity": "80 lbs",
+      "Weight": "7.4 lbs",
+      "Dimensions": "35\" x 24\" x 27\"",
+      "Material": "Aluminum Alloy",
+      "Height": "Adjustable (18\"–27\")"
+    },
+    rating: 5,
+    reviewCount: 112,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "furniture-007",
+    name: "Deluxe Reclining Camp Chair",
+    category: "Camp Furniture",
+    price: 139.99,
+    originalPrice: 169.99,
+    image: "/images/products/camp-furniture/Reclining-Chair1.jpg",
+    images: [
+      "/images/products/camp-furniture/Reclining-Chair2.jpg",
+      "/images/products/camp-furniture/Reclining-Chair3.jpg",
+      "/images/products/camp-furniture/Reclining-Chair4.jpg",
+      "/images/products/camp-furniture/Reclining-Chair5.jpg",
+      "/images/products/camp-furniture/Reclining-Chair6.jpg"
+    ],
+    description: "Premium reclining camp chair with adjustable backrest, head pillow, and breathable mesh fabric for ultimate relaxation.",
+    specifications: {
+      "Weight Capacity": "350 lbs",
+      "Weight": "12.5 lbs",
+      "Dimensions": "28\" x 26\" x 42\"",
+      "Seat Height": "18\"",
+      "Material": "Polyester Mesh",
+      "Frame": "Powder-coated Steel"
+    },
+    rating: 5,
+    reviewCount: 95,
+    inStock: true,
+    featured: true,
+    brand: "Summit Gear"
+  },
+  {
+    id: "furniture-008",
+    name: "Collapsible Camp Storage Organizer",
+    category: "Camp Furniture",
+    price: 119.99,
+    image: "/images/products/camp-furniture/Camp-Organizer1.jpeg",
+    images: [
+      "/images/products/camp-furniture/Camp-Organizer2.webp",
+      "/images/products/camp-furniture/Camp-Organizer3.webp",
+      "/images/products/camp-furniture/Camp-Organizer4.webp",
+      "/images/products/camp-furniture/Camp-Organizer5.webp",
+      "/images/products/camp-furniture/Camp-Organizer6.webp",
+      "/images/products/camp-furniture/Camp-Organizer7.webp",
+    ],
+    description: "Portable camp organizer with multiple shelves and side pockets. Keeps your food, gear, and utensils neatly stored.",
+    specifications: {
+      "Weight": "14 lbs",
+      "Dimensions": "24\" x 19\" x 32\"",
+      "Material": "600D Oxford Fabric",
+      "Frame": "Aluminum",
+      "Shelves": "3-Tier"
+    },
+    rating: 4,
+    reviewCount: 67,
+    inStock: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "furniture-009",
+    name: "Folding Camp Cot XL",
+    category: "Camp Furniture",
+    price: 159.99,
+    originalPrice: 189.99,
+    image: "/images/products/camp-furniture/Folding-Cot1.jpg",
+    images: [
+      "/images/products/camp-furniture/Folding-Cot2.jpg",
+      "/images/products/camp-furniture/Folding-Cot3.jpg",
+      "/images/products/camp-furniture/Folding-Cot4.jpg",
+      "/images/products/camp-furniture/Folding-Cot5.jpg",
+      "/images/products/camp-furniture/Folding-Cot6.jpg"
+    ],
+    description: "Extra-large folding camp cot with heavy-duty frame and breathable fabric. Provides off-the-ground comfort for camping trips.",
+    specifications: {
+      "Weight Capacity": "400 lbs",
+      "Weight": "16 lbs",
+      "Dimensions": "82\" x 30\" x 20\"",
+      "Material": "600D Polyester",
+      "Frame": "Steel"
+    },
+    rating: 5,
+    reviewCount: 154,
+    inStock: true,
+    featured: true,
+    brand: "HighTrail"
+  },
+  {
+    id: "furniture-010",
+    name: "Portable Hammock with Stand",
+    category: "Camp Furniture",
+    price: 129.99,
+    image: "/images/products/camp-furniture/Hammock-Stand1.jpg",
+    images: [
+      "/images/products/camp-furniture/Hammock-Stand2.jpg",
+      "/images/products/camp-furniture/Hammock-Stand3.jpg",
+      "/images/products/camp-furniture/Hammock-Stand4.jpg",
+      "/images/products/camp-furniture/Hammock-Stand5.jpg",
+    ],
+    description: "Relax anywhere with this portable hammock and foldable stand. Strong, lightweight, and easy to carry with included bag.",
+    specifications: {
+      "Weight Capacity": "350 lbs",
+      "Weight": "11.2 lbs",
+      "Dimensions": "108\" x 55\"",
+      "Material": "Cotton Blend Fabric",
+      "Frame": "Steel Tubing"
+    },
+    rating: 5,
+    reviewCount: 122,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "furniture-011",
+    name: "Compact Folding Camp Stool",
+    category: "Camp Furniture",
+    price: 34.99,
+    image: "/images/products/camp-furniture/Camp-Stool1.jpg",
+    images: [
+      "/images/products/camp-furniture/Camp-Stool2.jpg",
+      "/images/products/camp-furniture/Camp-Stool3.jpg",
+      "/images/products/camp-furniture/Camp-Stool4.jpg",
+      "/images/products/camp-furniture/Camp-Stool5.jpg",
+      "/images/products/camp-furniture/Camp-Stool6.jpg"
+    ],
+    description: "Ultralight folding stool for quick seating around the campfire, fishing trips, or hiking breaks.",
+    specifications: {
+      "Weight Capacity": "220 lbs",
+      "Weight": "1.6 lbs",
+      "Dimensions": "13\" x 13\" x 15\"",
+      "Material": "Oxford Cloth",
+      "Frame": "Aluminum Alloy"
+    },
+    rating: 4,
+    reviewCount: 88,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "furniture-012",
+    name: "Double Folding Camping Chair",
+    category: "Camp Furniture",
+    price: 149.99,
+    originalPrice: 179.99,
+    image: "/images/products/camp-furniture/Double-Chair1.jpg",
+    images: [
+      "/images/products/camp-furniture/Double-Chair2.jpg",
+      "/images/products/camp-furniture/Double-Chair3.jpg",
+      "/images/products/camp-furniture/Double-Chair4.jpg",
+      "/images/products/camp-furniture/Double-Chair5.jpg",
+      "/images/products/camp-furniture/Double-Chair6.jpg",
+      "/images/products/camp-furniture/Double-Chair7.jpg"
+    ],
+    description: "Two-person folding camping chair with padded seats and cup holders. Perfect for couples and family camping trips.",
+    specifications: {
+      "Weight Capacity": "500 lbs",
+      "Weight": "14 lbs",
+      "Dimensions": "48\" x 22\" x 36\"",
+      "Seat Height": "18\"",
+      "Material": "600D Polyester",
+      "Frame": "Steel"
+    },
+    rating: 5,
+    reviewCount: 76,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "furniture-013",
+    name: "Folding Camp Rocking Chair",
+    category: "Camp Furniture",
+    price: 119.99,
+    image: "/images/products/camp-furniture/Rocking-Chair1.jpg",
+    images: [
+      "/images/products/camp-furniture/Rocking-Chair2.jpg",
+      "/images/products/camp-furniture/Rocking-Chair3.jpg",
+      "/images/products/camp-furniture/Rocking-Chair4.jpg",
+      "/images/products/camp-furniture/Rocking-Chair5.jpg",
+      "/images/products/camp-furniture/Rocking-Chair6.jpg",
+    ],
+    description: "Smooth rocking motion with this sturdy folding camp chair. Includes padded armrests and cup holder.",
+    specifications: {
+      "Weight Capacity": "300 lbs",
+      "Weight": "12 lbs",
+      "Dimensions": "25\" x 24\" x 38\"",
+      "Material": "Polyester",
+      "Frame": "Powder-coated Steel"
+    },
+    rating: 5,
+    reviewCount: 131,
+    inStock: true,
+    brand: "RelaxOut"
+  },
+  {
+    id: "furniture-014",
+    name: "Adjustable Folding Camp Table with Storage",
+    category: "Camp Furniture",
+    price: 139.99,
+    image: "/images/products/camp-furniture/Table-Storage1.jpg",
+    images: [
+      "/images/products/camp-furniture/Table-Storage2.jpg",
+      "/images/products/camp-furniture/Table-Storage3.jpg",
+      "/images/products/camp-furniture/Table-Storage4.jpg",
+      "/images/products/camp-furniture/Table-Storage5.jpg",
+      "/images/products/camp-furniture/Table-Storage6.jpg"
+    ],
+    description: "Convenient camp table with fold-out storage compartments. Great for cooking prep or gear organization.",
+    specifications: {
+      "Weight Capacity": "60 lbs",
+      "Weight": "10.3 lbs",
+      "Dimensions": "40\" x 20\" x 28\"",
+      "Material": "Aluminum & Polyester",
+      "Storage": "2 Compartments"
+    },
+    rating: 4,
+    reviewCount: 54,
+    inStock: true,
+    brand: "Summit Gear"
+  },
+  {
+    id: "furniture-015",
+    name: "Luxury Inflatable Camping Sofa",
+    category: "Camp Furniture",
+    price: 179.99,
+    originalPrice: 219.99,
+    image: "/images/products/camp-furniture/Camping-Sofa1.jpg",
+    images: [
+      "/images/products/camp-furniture/Camping-Sofa2.jpg",
+      "/images/products/camp-furniture/Camping-Sofa3.jpg",
+      "/images/products/camp-furniture/Camping-Sofa4.jpg",
+      "/images/products/camp-furniture/Camping-Sofa5.jpg",
+      "/images/products/camp-furniture/Camping-Sofa6.jpg",
+      "/images/products/camp-furniture/Camping-Sofa7.jpg"
+    ],
+    description: "Spacious inflatable sofa made with durable TPU material. Comfortable, stylish, and easy to set up at the campsite.",
+    specifications: {
+      "Weight Capacity": "500 lbs",
+      "Weight": "8.5 lbs",
+      "Dimensions": "75\" x 35\" x 28\"",
+      "Material": "TPU & Polyester",
+      "Inflation": "Air Pump (Included)"
+    },
+    rating: 5,
+    reviewCount: 61,
+    inStock: true,
+    featured: true,
+    brand: "ZenCamp"
+  },
+  
+
 
   // Additional products to reach 40+
   {

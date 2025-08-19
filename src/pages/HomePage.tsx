@@ -1,23 +1,68 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Hero from "../components/Hero";
 import FeaturedProducts from "../components/FeaturedProducts";
 import Categories from "../components/Categories";
 import Newsletter from "../components/Newsletter";
 
 const HomePage: React.FC = () => {
+  const featuredRef = useRef<HTMLElement>(null);
+  const categoriesRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
+  const newsletterRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-in");
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    const sections = [featuredRef.current, categoriesRef.current, aboutRef.current, newsletterRef.current];
+    sections.forEach((section) => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div>
       <Hero />
-      <FeaturedProducts />
-      <Categories />
+      
+      <section 
+        ref={featuredRef}
+        className="py-16 bg-gray-50 opacity-0 transform translate-y-8 transition-all duration-1000 ease-out"
+      >
+        <FeaturedProducts />
+      </section>
+
+      <section 
+        ref={categoriesRef}
+        className="py-16 bg-white opacity-0 transform translate-y-8 transition-all duration-1000 ease-out"
+      >
+        <Categories />
+      </section>
 
       {/* About Us Snippet */}
-      <section className="py-16 bg-gray-50">
+      <section 
+        ref={aboutRef}
+        className="py-16 bg-gray-50 opacity-0 transform translate-y-8 transition-all duration-1000 ease-out"
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 opacity-0 transform translate-y-4 transition-all duration-700 delay-200">
             About Outwest Outfitters
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          <p className="text-lg text-gray-600 leading-relaxed mb-8 opacity-0 transform translate-y-4 transition-all duration-700 delay-400">
             Founded in 2025 by outdoor enthusiast Hank Bunting, Outwest
             Outfitters was born from a passion for adventure and a commitment to
             providing reliable, high-quality outdoor gear. Based in California,
@@ -29,7 +74,7 @@ const HomePage: React.FC = () => {
           </p>
           <a
             href="/about"
-            className="inline-flex items-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors duration-200"
+            className="inline-flex items-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl opacity-0 transform translate-y-4 transition-all duration-700 delay-600"
           >
             Learn More About Us
           </a>
@@ -120,7 +165,12 @@ const HomePage: React.FC = () => {
         </div>
       </section> */}
 
-      <Newsletter />
+      <section 
+        ref={newsletterRef}
+        className="py-16 bg-emerald-600 opacity-0 transform translate-y-8 transition-all duration-1000 ease-out"
+      >
+        <Newsletter />
+      </section>
     </div>
   );
 };

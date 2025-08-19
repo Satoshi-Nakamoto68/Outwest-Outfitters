@@ -17,17 +17,40 @@ const ProductDetailPage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMainLoaded, setIsMainLoaded] = useState(false);
 
+  // Reset image index when product changes
+  useEffect(() => {
+    setSelectedImageIndex(0);
+  }, [id]);
+
   const product = getProductById(id || "");
+
+  // Preload the main product image
+  useEffect(() => {
+    if (product?.image) {
+      const img = new Image();
+      img.onload = () => {
+        if (selectedImageIndex === 0) {
+          setIsMainLoaded(true);
+        }
+      };
+      img.onerror = () => {
+        if (selectedImageIndex === 0) {
+          setIsMainLoaded(true);
+        }
+      };
+      img.src = product.image;
+    }
+  }, [product?.image, selectedImageIndex]);
 
   // Scroll to top when component mounts or product changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  // Reset main image loading state when the displayed image changes
+  // Reset main image loading state when the displayed image changes or product changes
   useEffect(() => {
     setIsMainLoaded(false);
-  }, [selectedImageIndex, id]);
+  }, [selectedImageIndex, id, product?.id]);
 
   // Handle keyboard events for modal
   useEffect(() => {
@@ -176,7 +199,7 @@ const ProductDetailPage: React.FC = () => {
                     {/* Loading skeleton */}
                     {!isMainLoaded && (
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="h-[22rem] sm:h-[24rem] md:h-[28rem] lg:h-[30rem] w-full bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100 animate-shimmer [background-size:200%_100%]" />
+                        <div className="h-[22rem] sm:h-[24rem] md:h-[28rem] lg:h-[30rem] w-full bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100 animate-pulse" />
                       </div>
                     )}
 
@@ -188,8 +211,9 @@ const ProductDetailPage: React.FC = () => {
                           : product.images[selectedImageIndex - 1]
                       }
                       alt={product.name}
-                      loading="lazy"
+                      loading="eager"
                       onLoad={() => setIsMainLoaded(true)}
+                      onError={() => setIsMainLoaded(true)}
                       className={`w-full h-[22rem] sm:h-[24rem] md:h-[28rem] lg:h-[30rem] object-contain cursor-zoom-in transition-all duration-500 ease-out ${
                         isMainLoaded ? "opacity-100" : "opacity-0"
                       } group-hover:scale-[1.02]`}
