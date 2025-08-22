@@ -439,6 +439,285 @@ export const products: Product[] = [
     featured: true,
     brand: "ComfortCamp"
   },
+  {
+    id: "tent-016",
+    name: "Explorer 2-Person Dome Tent",
+    category: "Tents",
+    price: 159.99,
+    originalPrice: 189.99,
+    image: "/images/products/tents/Explorer-2P-1.jpg",
+    images: [
+      "/images/products/tents/Explorer-2P-2.jpg",
+      "/images/products/tents/Explorer-2P-3.jpg",
+      "/images/products/tents/Explorer-2P-4.jpg",
+      "/images/products/tents/Explorer-2P-5.jpg"
+    ],
+    description: "Lightweight 2-person dome tent with quick setup system, ideal for backpacking and weekend trips.",
+    specifications: {
+      "Capacity": "2 Persons",
+      "Weight": "5.8 lbs",
+      "Dimensions": "84\" x 50\" x 42\"",
+      "Material": "210T Polyester",
+      "Waterproof Rating": "3000mm",
+      "Frame": "Fiberglass Poles"
+    },
+    rating: 5,
+    reviewCount: 134,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "tent-017",
+    name: "Summit 4-Person Family Tent",
+    category: "Tents",
+    price: 229.99,
+    originalPrice: 269.99,
+    image: "/images/products/tents/Summit-4P-1.jpg",
+    images: [
+      "/images/products/tents/Summit-4P-2.jpg",
+      "/images/products/tents/Summit-4P-3.jpg",
+      "/images/products/tents/Summit-4P-4.jpg",
+      "/images/products/tents/Summit-4P-5.jpg"
+    ],
+    description: "Spacious 4-person family tent with large vestibule, mesh windows, and rainfly for all-weather camping.",
+    specifications: {
+      "Capacity": "4 Persons",
+      "Weight": "11.2 lbs",
+      "Dimensions": "108\" x 84\" x 60\"",
+      "Material": "Polyester 68D",
+      "Waterproof Rating": "4000mm",
+      "Frame": "Aluminum Poles"
+    },
+    rating: 5,
+    reviewCount: 98,
+    inStock: true,
+    featured: true,
+    brand: "HighTrail"
+  },
+  {
+    id: "tent-018",
+    name: "Backpacker Ultralight Tent 1P",
+    category: "Tents",
+    price: 189.99,
+    image: "/images/products/tents/Backpacker-1P-1.jpg",
+    images: [
+      "/images/products/tents/Backpacker-1P-2.jpg",
+      "/images/products/tents/Backpacker-1P-3.jpg",
+      "/images/products/tents/Backpacker-1P-4.jpg",
+      "/images/products/tents/Backpacker-1P-5.jpg",
+      "/images/products/tents/Backpacker-1P-6.jpg"
+    ],
+    description: "Solo backpacking tent with ultralight design and compact storage. Quick pitch setup for long treks.",
+    specifications: {
+      "Capacity": "1 Person",
+      "Weight": "2.9 lbs",
+      "Dimensions": "84\" x 36\" x 38\"",
+      "Material": "20D Ripstop Nylon",
+      "Waterproof Rating": "5000mm",
+      "Frame": "Aluminum Alloy"
+    },
+    rating: 4,
+    reviewCount: 73,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "tent-019",
+    name: "Desert Shield 6-Person Tent",
+    category: "Tents",
+    price: 349.99,
+    image: "/images/products/tents/Desert-6P-1.jpg",
+    images: [
+      "/images/products/tents/Desert-6P-2.jpg",
+      "/images/products/tents/Desert-6P-3.jpg",
+      "/images/products/tents/Desert-6P-4.jpg",
+      "/images/products/tents/Desert-6P-5.jpg",
+      "/images/products/tents/Desert-6P-6.jpg",
+      "/images/products/tents/Desert-6P-7.jpg",
+      "/images/products/tents/Desert-6P-8.jpg"
+    ],
+    description: "Durable 6-person tent with dual entrances, excellent ventilation, and heavy-duty waterproof fabric.",
+    specifications: {
+      "Capacity": "6 Persons",
+      "Weight": "18 lbs",
+      "Dimensions": "120\" x 108\" x 78\"",
+      "Material": "210D Oxford",
+      "Waterproof Rating": "5000mm",
+      "Frame": "Fiberglass & Steel"
+    },
+    rating: 5,
+    reviewCount: 102,
+    inStock: true,
+    brand: "Summit Gear"
+  },
+  {
+    id: "tent-020",
+    name: "Luxury Glamping Bell Tent",
+    category: "Tents",
+    price: 799.99,
+    originalPrice: 899.99,
+    image: "/images/products/tents/Bell-Glamping-1.jpg",
+    images: [
+      "/images/products/tents/Bell-Glamping-2.jpg",
+      "/images/products/tents/Bell-Glamping-3.jpg",
+      "/images/products/tents/Bell-Glamping-4.jpg",
+      "/images/products/tents/Bell-Glamping-5.jpg",
+      "/images/products/tents/Bell-Glamping-6.jpg"
+    ],
+    description: "Spacious canvas bell tent for luxury glamping. Breathable cotton fabric with stove jack and multiple windows.",
+    specifications: {
+      "Capacity": "8 Persons",
+      "Weight": "56 lbs",
+      "Dimensions": "196\" diameter x 118\" height",
+      "Material": "100% Cotton Canvas",
+      "Waterproof Rating": "3000mm",
+      "Frame": "Steel Poles"
+    },
+    rating: 5,
+    reviewCount: 44,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "tent-021",
+    name: "Pop-Up Instant Tent 3P",
+    category: "Tents",
+    price: 149.99,
+    image: "/images/products/tents/Popup-3P-1.jpg",
+    images: [
+      "/images/products/tents/Popup-3P-2.jpg",
+      "/images/products/tents/Popup-3P-3.jpg",
+      "/images/products/tents/Popup-3P-4.jpg",
+      "/images/products/tents/Popup-3P-5.jpg",
+      "/images/products/tents/Popup-3P-6.jpg"
+    ],
+    description: "Easy pop-up 3-person tent with automatic spring frame. Perfect for festivals, beach trips, or quick getaways.",
+    specifications: {
+      "Capacity": "3 Persons",
+      "Weight": "7.1 lbs",
+      "Dimensions": "86\" x 72\" x 50\"",
+      "Material": "190T Polyester",
+      "Waterproof Rating": "2000mm",
+      "Frame": "Spring Steel"
+    },
+    rating: 4,
+    reviewCount: 87,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "tent-022",
+    name: "Extreme Weather Mountaineering Tent",
+    category: "Tents",
+    price: 599.99,
+    image: "/images/products/tents/Mountaineering-1.jpg",
+    images: [
+      "/images/products/tents/Mountaineering-2.jpg",
+      "/images/products/tents/Mountaineering-3.jpg",
+      "/images/products/tents/Mountaineering-4.jpg",
+      "/images/products/tents/Mountaineering-5.jpg",
+      "/images/products/tents/Mountaineering-6.jpg"
+    ],
+    description: "Professional-grade mountaineering tent with geodesic structure, snow skirt, and extreme weather protection.",
+    specifications: {
+      "Capacity": "2 Persons",
+      "Weight": "9.6 lbs",
+      "Dimensions": "88\" x 54\" x 45\"",
+      "Material": "40D Ripstop Nylon",
+      "Waterproof Rating": "6000mm",
+      "Frame": "Aluminum DAC Poles"
+    },
+    rating: 5,
+    reviewCount: 65,
+    inStock: true,
+    featured: true,
+    brand: "HighTrail"
+  },
+  {
+    id: "tent-023",
+    name: "Cabin Style 10-Person Tent",
+    category: "Tents",
+    price: 499.99,
+    originalPrice: 559.99,
+    image: "/images/products/tents/Cabin-10P-1.jpg",
+    images: [
+      "/images/products/tents/Cabin-10P-2.jpg",
+      "/images/products/tents/Cabin-10P-3.jpg",
+      "/images/products/tents/Cabin-10P-4.jpg",
+      "/images/products/tents/Cabin-10P-5.jpg",
+      "/images/products/tents/Cabin-10P-6.jpg"
+    ],
+    description: "Massive 10-person cabin tent with tall ceilings, room dividers, and large windows for family camping.",
+    specifications: {
+      "Capacity": "10 Persons",
+      "Weight": "32 lbs",
+      "Dimensions": "240\" x 120\" x 84\"",
+      "Material": "Polyester Oxford",
+      "Waterproof Rating": "4000mm",
+      "Frame": "Steel & Fiberglass"
+    },
+    rating: 5,
+    reviewCount: 89,
+    inStock: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "tent-024",
+    name: "Ultralight Bivy Tent",
+    category: "Tents",
+    price: 129.99,
+    image: "/images/products/tents/Bivy-1.jpg",
+    images: [
+      "/images/products/tents/Bivy-2.jpg",
+      "/images/products/tents/Bivy-3.jpg",
+      "/images/products/tents/Bivy-4.jpg",
+      "/images/products/tents/Bivy-5.jpg",
+      "/images/products/tents/Bivy-6.jpg"
+    ],
+    description: "Compact bivy tent for solo adventurers. Waterproof, windproof, and packs down ultra-small.",
+    specifications: {
+      "Capacity": "1 Person",
+      "Weight": "2.1 lbs",
+      "Dimensions": "82\" x 30\" x 28\"",
+      "Material": "15D Nylon",
+      "Waterproof Rating": "5000mm",
+      "Frame": "Aluminum"
+    },
+    rating: 4,
+    reviewCount: 52,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "tent-025",
+    name: "Family Tunnel Tent 8P",
+    category: "Tents",
+    price: 549.99,
+    image: "/images/products/tents/Tunnel-8P-1.jpg",
+    images: [
+      "/images/products/tents/Tunnel-8P-2.jpg",
+      "/images/products/tents/Tunnel-8P-3.jpg",
+      "/images/products/tents/Tunnel-8P-4.jpg",
+      "/images/products/tents/Tunnel-8P-5.jpg",
+      "/images/products/tents/Tunnel-8P-6.jpg"
+    ],
+    description: "Large tunnel tent with multiple rooms and storage areas. Perfect for extended family camping trips.",
+    specifications: {
+      "Capacity": "8 Persons",
+      "Weight": "28 lbs",
+      "Dimensions": "216\" x 110\" x 78\"",
+      "Material": "210T Polyester",
+      "Waterproof Rating": "5000mm",
+      "Frame": "Fiberglass Poles"
+    },
+    rating: 5,
+    reviewCount: 74,
+    inStock: true,
+    featured: true,
+    brand: "Summit Gear"
+  },
+  
 
 
   // SLEEPING BAGS & PADS
