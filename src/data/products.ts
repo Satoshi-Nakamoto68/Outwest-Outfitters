@@ -1121,6 +1121,274 @@ export const products: Product[] = [
     featured: true,
     brand: "WindPeak"
   },
+  {
+    id: "sleep-015",
+    name: "EverRest Mummy Sleeping Bag -15°C",
+    category: "Sleeping Bags & Pads",
+    price: 189.99,
+    originalPrice: 229.99,
+    image: "/images/products/sleeping-bags/EverRest-Mummy1.jpg",
+    images: [
+      "/images/products/sleeping-bags/EverRest-Mummy2.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy3.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy4.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy5.jpg",
+      "/images/products/sleeping-bags/EverRest-Mummy6.jpg"
+    ],
+    description: "Warm mummy-style sleeping bag rated to -15°C, ideal for alpine camping and cold-weather expeditions.",
+    specifications: {
+      "Temperature Rating": "-15°C",
+      "Weight": "3.4 lbs",
+      "Dimensions": "84\" x 32\"",
+      "Insulation": "Down 700FP",
+      "Shell": "20D Ripstop Nylon"
+    },
+    rating: 5,
+    reviewCount: 112,
+    inStock: true,
+    featured: true,
+    brand: "Summit Gear"
+  },
+  {
+    id: "sleep-016",
+    name: "TrailMate Ultralight Sleeping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 89.99,
+    image: "/images/products/sleeping-bags/TrailMate-Pad1.jpg",
+    images: [
+      "/images/products/sleeping-bags/TrailMate-Pad2.jpg",
+      "/images/products/sleeping-bags/TrailMate-Pad3.jpg",
+      "/images/products/sleeping-bags/TrailMate-Pad4.jpg",
+      "/images/products/sleeping-bags/TrailMate-Pad5.jpg",
+      "/images/products/sleeping-bags/TrailMate-Pad6.jpg",
+      "/images/products/sleeping-bags/TrailMate-Pad7.jpg"
+    ],
+    description: "Compact and ultralight inflatable sleeping pad for backpacking comfort on any terrain.",
+    specifications: {
+      "R-Value": "3.2",
+      "Weight": "1.1 lbs",
+      "Dimensions": "72\" x 22\" x 2.5\"",
+      "Material": "30D Nylon TPU",
+      "Packed Size": "9\" x 3.5\""
+    },
+    rating: 4,
+    reviewCount: 89,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "sleep-017",
+    name: "ZenCamp Double Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 149.99,
+    image: "/images/products/sleeping-bags/ZenCamp-Double1.jpg",
+    images: [
+      "/images/products/sleeping-bags/ZenCamp-Double2.jpg",
+      "/images/products/sleeping-bags/ZenCamp-Double3.jpg",
+      "/images/products/sleeping-bags/ZenCamp-Double4.jpg",
+      "/images/products/sleeping-bags/ZenCamp-Double5.jpg"
+    ],
+    description: "Spacious double sleeping bag for two people, with detachable design to use as singles.",
+    specifications: {
+      "Temperature Rating": "0°C",
+      "Weight": "7.6 lbs",
+      "Dimensions": "90\" x 65\"",
+      "Insulation": "Synthetic Hollow Fiber",
+      "Shell": "190T Polyester"
+    },
+    rating: 5,
+    reviewCount: 64,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "sleep-018",
+    name: "Luxury Self-Inflating Camping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 129.99,
+    image: "/images/products/sleeping-bags/Luxury-Pad1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Luxury-Pad2.jpg",
+      "/images/products/sleeping-bags/Luxury-Pad3.jpg",
+      "/images/products/sleeping-bags/Luxury-Pad4.jpg",
+      "/images/products/sleeping-bags/Luxury-Pad5.jpg",
+      "/images/products/sleeping-bags/Luxury-Pad6.jpg"
+    ],
+    description: "Extra-thick self-inflating pad for maximum comfort during car camping or glamping trips.",
+    specifications: {
+      "R-Value": "5.0",
+      "Weight": "6.2 lbs",
+      "Dimensions": "78\" x 30\" x 3\"",
+      "Material": "75D Polyester",
+      "Packed Size": "30\" x 10\""
+    },
+    rating: 5,
+    reviewCount: 48,
+    inStock: true,
+    featured: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "sleep-019",
+    name: "Kids Adventure Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 69.99,
+    image: "/images/products/sleeping-bags/Kids-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Kids-Bag2.jpg",
+      "/images/products/sleeping-bags/Kids-Bag3.jpg",
+      "/images/products/sleeping-bags/Kids-Bag4.jpg",
+      "/images/products/sleeping-bags/Kids-Bag5.jpg",
+      "/images/products/sleeping-bags/Kids-Bag6.jpg"
+    ],
+    description: "Fun, lightweight sleeping bag for kids with colorful prints and cozy insulation.",
+    specifications: {
+      "Temperature Rating": "10°C",
+      "Weight": "2.5 lbs",
+      "Dimensions": "64\" x 28\"",
+      "Insulation": "Synthetic Polyester",
+      "Shell": "Polyester 190T"
+    },
+    rating: 4,
+    reviewCount: 37,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "sleep-020",
+    name: "Expedition Extreme Down Sleeping Bag -30°C",
+    category: "Sleeping Bags & Pads",
+    price: 399.99,
+    originalPrice: 459.99,
+    image: "/images/products/sleeping-bags/Expedition-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Expedition-Bag2.jpg",
+      "/images/products/sleeping-bags/Expedition-Bag3.jpg",
+      "/images/products/sleeping-bags/Expedition-Bag4.jpg",
+      "/images/products/sleeping-bags/Expedition-Bag5.jpg",
+      "/images/products/sleeping-bags/Expedition-Bag6.jpg",
+      "/images/products/sleeping-bags/Expedition-Bag7.jpg"
+    ],
+    description: "Professional expedition sleeping bag with 900FP goose down, rated for extreme cold -30°C.",
+    specifications: {
+      "Temperature Rating": "-30°C",
+      "Weight": "4.9 lbs",
+      "Dimensions": "86\" x 34\"",
+      "Insulation": "900FP Goose Down",
+      "Shell": "15D Pertex Quantum"
+    },
+    rating: 5,
+    reviewCount: 55,
+    inStock: true,
+    featured: true,
+    brand: "HighTrail"
+  },
+  {
+    id: "sleep-021",
+    name: "Compact Foam Sleeping Pad",
+    category: "Sleeping Bags & Pads",
+    price: 49.99,
+    image: "/images/products/sleeping-bags/Foam-Pad1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Foam-Pad2.jpg",
+      "/images/products/sleeping-bags/Foam-Pad3.jpg",
+      "/images/products/sleeping-bags/Foam-Pad4.jpg",
+      "/images/products/sleeping-bags/Foam-Pad5.jpg",
+      "/images/products/sleeping-bags/Foam-Pad6.jpg",
+      "/images/products/sleeping-bags/Foam-Pad7.jpg"
+    ],
+    description: "Durable closed-cell foam pad for lightweight insulation and reliable comfort.",
+    specifications: {
+      "R-Value": "2.0",
+      "Weight": "14 oz",
+      "Dimensions": "72\" x 20\" x 0.75\"",
+      "Material": "Crosslinked PE Foam",
+      "Packed Size": "20\" x 6\" x 5\""
+    },
+    rating: 4,
+    reviewCount: 102,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "sleep-022",
+    name: "Hybrid Sleeping Bag Quilt",
+    category: "Sleeping Bags & Pads",
+    price: 159.99,
+    image: "/images/products/sleeping-bags/Hybrid-Quilt1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Hybrid-Quilt2.jpg",
+      "/images/products/sleeping-bags/Hybrid-Quilt3.jpg",
+      "/images/products/sleeping-bags/Hybrid-Quilt4.jpg",
+      "/images/products/sleeping-bags/Hybrid-Quilt5.jpg",
+      "/images/products/sleeping-bags/Hybrid-Quilt6.jpg"
+    ],
+    description: "Versatile quilt sleeping bag that converts between blanket and mummy style for 3-season camping.",
+    specifications: {
+      "Temperature Rating": "5°C",
+      "Weight": "2.8 lbs",
+      "Dimensions": "82\" x 55\"",
+      "Insulation": "650FP Duck Down",
+      "Shell": "20D Nylon"
+    },
+    rating: 5,
+    reviewCount: 41,
+    inStock: true,
+    brand: "Summit Gear"
+  },
+  {
+    id: "sleep-023",
+    name: "Luxury Air Mattress with Pump",
+    category: "Sleeping Bags & Pads",
+    price: 199.99,
+    image: "/images/products/sleeping-bags/Air-Mattress1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Air-Mattress2.jpg",
+      "/images/products/sleeping-bags/Air-Mattress3.jpg",
+      "/images/products/sleeping-bags/Air-Mattress4.jpg",
+      "/images/products/sleeping-bags/Air-Mattress5.jpg",
+      "/images/products/sleeping-bags/Air-Mattress6.jpg"
+    ],
+    description: "Queen-size camping air mattress with built-in electric pump for quick setup and premium comfort.",
+    specifications: {
+      "Dimensions": "80\" x 60\" x 8\"",
+      "Weight": "15 lbs",
+      "Material": "PVC with Flocked Top",
+      "Pump": "Built-in Electric",
+      "Packed Size": "25\" x 12\" x 10\""
+    },
+    rating: 4,
+    reviewCount: 63,
+    inStock: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "sleep-024",
+    name: "Summer Lightweight Sleeping Bag",
+    category: "Sleeping Bags & Pads",
+    price: 59.99,
+    image: "/images/products/sleeping-bags/Summer-Bag1.jpg",
+    images: [
+      "/images/products/sleeping-bags/Summer-Bag2.jpg",
+      "/images/products/sleeping-bags/Summer-Bag3.jpg",
+      "/images/products/sleeping-bags/Summer-Bag4.jpg",
+      "/images/products/sleeping-bags/Summer-Bag5.jpg",
+      "/images/products/sleeping-bags/Summer-Bag6.jpg"
+    ],
+    description: "Breathable and compact sleeping bag for summer camping, festivals, and travel.",
+    specifications: {
+      "Temperature Rating": "15°C",
+      "Weight": "1.8 lbs",
+      "Dimensions": "78\" x 30\"",
+      "Insulation": "Synthetic Hollow Fiber",
+      "Shell": "190T Polyester"
+    },
+    rating: 4,
+    reviewCount: 58,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  
 
 
   // BACKPACKS & BAGS
@@ -1508,6 +1776,7 @@ export const products: Product[] = [
     featured: true,
     brand: "Summit Gear"
   },
+  
   
 
 
