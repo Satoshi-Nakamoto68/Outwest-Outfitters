@@ -1776,6 +1776,269 @@ export const products: Product[] = [
     featured: true,
     brand: "Summit Gear"
   },
+  {
+    id: "pack-016",
+    name: "TrailMate 40L Hiking Backpack",
+    category: "Backpacks & Bags",
+    price: 139.99,
+    image: "/images/products/backpacks/TrailMate-40L-1.webp",
+    images: [
+      "/images/products/backpacks/TrailMate-40L-2.webp",
+      "/images/products/backpacks/TrailMate-40L-3.webp",
+      "/images/products/backpacks/TrailMate-40L-4.webp",
+      "/images/products/backpacks/TrailMate-40L-5.webp",
+      "/images/products/backpacks/TrailMate-40L-6.webp"
+    ],
+    description: "Lightweight and durable 40L pack, perfect for weekend trips or overnight adventures.",
+    specifications: {
+      "Capacity": "40L",
+      "Weight": "2.8 lbs",
+      "Dimensions": "26\" x 12\" x 10\"",
+      "Material": "600D Polyester",
+      "Frame": "Frameless"
+    },
+    rating: 4,
+    reviewCount: 97,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "pack-017",
+    name: "Urban Explorer Daypack 25L",
+    category: "Backpacks & Bags",
+    price: 89.99,
+    image: "/images/products/backpacks/Urban-Explorer-25L-1.jpg",
+    images: [
+      "/images/products/backpacks/Urban-Explorer-25L-2.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L-3.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L-4.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L-5.jpg",
+      "/images/products/backpacks/Urban-Explorer-25L-6.jpg"
+    ],
+    description: "Versatile daypack with laptop sleeve, hydration port, and sleek urban styling.",
+    specifications: {
+      "Capacity": "25L",
+      "Weight": "1.9 lbs",
+      "Dimensions": "20\" x 11\" x 8\"",
+      "Material": "500D Polyester",
+      "Laptop Sleeve": "Up to 15\""
+    },
+    rating: 4,
+    reviewCount: 88,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "pack-018",
+    name: "Outwest Expedition Duffel 90L",
+    category: "Backpacks & Bags",
+    price: 159.99,
+    image: "/images/products/backpacks/Outwest-90L-1.png",
+    images: [
+      "/images/products/backpacks/Outwest-90L-2.jpeg",
+      "/images/products/backpacks/Outwest-90L-3.jpeg",
+      "/images/products/backpacks/Outwest-90L-4.jpeg",
+      "/images/products/backpacks/Outwest-90L-5.jpeg",
+      "/images/products/backpacks/Outwest-90L-6.jpeg",
+      "/images/products/backpacks/Outwest-90L-7.jpeg",
+    ],
+    description: "Heavy-duty expedition duffel bag with reinforced base and detachable backpack straps.",
+    specifications: {
+      "Capacity": "90L",
+      "Weight": "5.1 lbs",
+      "Dimensions": "34\" x 16\" x 15\"",
+      "Material": "900D TPU Laminated",
+      "Water Resistance": "Yes"
+    },
+    rating: 5,
+    reviewCount: 74,
+    inStock: true,
+    brand: "Outwest Comfort"
+  },
+  {
+    id: "pack-019",
+    name: "Compact Hydration Pack 12L",
+    category: "Backpacks & Bags",
+    price: 69.99,
+    image: "/images/products/backpacks/Hydration-12L-1.jpg",
+    images: [
+      "/images/products/backpacks/Hydration-12L-2.jpg",
+      "/images/products/backpacks/Hydration-12L-3.jpg",
+      "/images/products/backpacks/Hydration-12L-4.jpg",
+      "/images/products/backpacks/Hydration-12L-5.jpg",
+      "/images/products/backpacks/Hydration-12L-6.jpg",
+    ],
+    description: "Minimalist hydration backpack with 2L bladder included, designed for biking and trail running.",
+    specifications: {
+      "Capacity": "12L",
+      "Weight": "1.3 lbs",
+      "Dimensions": "18\" x 9\" x 5\"",
+      "Material": "Ripstop Nylon",
+      "Hydration Bladder": "2L Included"
+    },
+    rating: 4,
+    reviewCount: 61,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "pack-020",
+    name: "Weekend Travel Backpack 50L",
+    category: "Backpacks & Bags",
+    price: 179.99,
+    image: "/images/products/backpacks/Weekend-Travel-50L-1.jpg",
+    images: [
+      "/images/products/backpacks/Weekend-Travel-50L-2.jpg",
+      "/images/products/backpacks/Weekend-Travel-50L-3.jpg",
+      "/images/products/backpacks/Weekend-Travel-50L-4.jpg",
+      "/images/products/backpacks/Weekend-Travel-50L-5.jpg"
+    ],
+    description: "Smart travel backpack with front-loading design, multiple compartments, and carry-on friendly size.",
+    specifications: {
+      "Capacity": "50L",
+      "Weight": "3.6 lbs",
+      "Dimensions": "28\" x 14\" x 11\"",
+      "Material": "Polyester Oxford",
+      "Features": "Front Loading, TSA Size"
+    },
+    rating: 5,
+    reviewCount: 102,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "pack-021",
+    name: "Climber Pro Alpine Pack 55L",
+    category: "Backpacks & Bags",
+    price: 249.99,
+    originalPrice: 299.99,
+    image: "/images/products/backpacks/Climber-Pro-55L-1.jpg",
+    images: [
+      "/images/products/backpacks/Climber-Pro-55L-2.jpg",
+      "/images/products/backpacks/Climber-Pro-55L-3.jpg",
+      "/images/products/backpacks/Climber-Pro-55L-4.jpg",
+      "/images/products/backpacks/Climber-Pro-55L-5.jpg",
+    ],
+    description: "Technical alpine climbing pack with gear loops, rope holder, and reinforced crampon patch.",
+    specifications: {
+      "Capacity": "55L",
+      "Weight": "3.9 lbs",
+      "Dimensions": "30\" x 13\" x 11\"",
+      "Material": "Dyneema Ripstop",
+      "Frame": "Internal Frame"
+    },
+    rating: 5,
+    reviewCount: 47,
+    inStock: true,
+    featured: true,
+    brand: "HighTrail"
+  },
+  {
+    id: "pack-022",
+    name: "Compact Foldable Daypack 20L",
+    category: "Backpacks & Bags",
+    price: 39.99,
+    image: "/images/products/backpacks/Foldable-20L-1.jpg",
+    images: [
+      "/images/products/backpacks/Foldable-20L-2.jpg",
+      "/images/products/backpacks/Foldable-20L-3.jpg",
+      "/images/products/backpacks/Foldable-20L-4.jpg",
+      "/images/products/backpacks/Foldable-20L-5.jpg",
+      "/images/products/backpacks/Foldable-20L-6.jpg"
+    ],
+    description: "Ultra-light packable daypack that folds into its own pocket for easy carrying.",
+    specifications: {
+      "Capacity": "20L",
+      "Weight": "0.8 lbs",
+      "Dimensions": "18\" x 10\" x 7\"",
+      "Material": "210D Nylon",
+      "Folded Size": "7\" x 6\""
+    },
+    rating: 4,
+    reviewCount: 59,
+    inStock: true,
+    brand: "TrailMate"
+  },
+  {
+    id: "pack-023",
+    name: "NRS Bill’s Dry Bag 30L",
+    category: "Backpacks & Bags",
+    price: 74.99,
+    image: "/images/products/backpacks/NRS-Bills-DryBag-30L1.jpg",
+    images: [
+      "/images/products/backpacks/NRS-Bills-DryBag-30L2.jpg",
+      "/images/products/backpacks/NRS-Bills-DryBag-30L3.jpg",
+      "/images/products/backpacks/NRS-Bills-DryBag-30L4.jpg",
+      "/images/products/backpacks/NRS-Bills-DryBag-30L5.jpg",
+      "/images/products/backpacks/NRS-Bills-DryBag-30L6.jpg"
+    ],
+    description: "Trusted by adventurers since 1977, this heavy-duty 30 L dry bag features welded seams, PVC TobaTex fabric, and a removable backpack harness—engineered for ultimate waterproof protection and ease of carry.",
+    specifications: {
+      "Capacity": "30L",
+      "Weight": "2.0 lbs",
+      "Material": "21-oz PVC TobaTex",
+      "Closure": "Roll-top with Buckle",
+      "Extras": "Removable Backpack Harness"
+    },
+    rating: 5,
+    reviewCount: 142,
+    inStock: true,
+    brand: "NRS"
+  },
+  {
+    id: "pack-024",
+    name: "Laptop & Travel Backpack 30L",
+    category: "Backpacks & Bags",
+    price: 119.99,
+    image: "/images/products/backpacks/Laptop-Travel-30L-1.jpg",
+    images: [
+      "/images/products/backpacks/Laptop-Travel-30L-2.jpg",
+      "/images/products/backpacks/Laptop-Travel-30L-3.jpg",
+      "/images/products/backpacks/Laptop-Travel-30L-4.jpg",
+      "/images/products/backpacks/Laptop-Travel-30L-5.jpg",
+      "/images/products/backpacks/Laptop-Travel-30L-6.jpg"
+    ],
+    description: "Multi-purpose backpack for commuting and travel, with padded laptop sleeve and USB charging port.",
+    specifications: {
+      "Capacity": "30L",
+      "Weight": "2.4 lbs",
+      "Dimensions": "19\" x 12\" x 9\"",
+      "Material": "Oxford Polyester",
+      "Laptop Sleeve": "Up to 17\""
+    },
+    rating: 4,
+    reviewCount: 84,
+    inStock: true,
+    brand: "ZenCamp"
+  },
+  {
+    id: "pack-025",
+    name: "Adventure Pro Trekking Pack 70L",
+    category: "Backpacks & Bags",
+    price: 269.99,
+    originalPrice: 319.99,
+    image: "/images/products/backpacks/Adventure-Pro-70L-6.jpg",
+    images: [
+      "/images/products/backpacks/Adventure-Pro-70L-1.webp",
+      "/images/products/backpacks/Adventure-Pro-70L-2.webp",
+      "/images/products/backpacks/Adventure-Pro-70L-3.webp",
+      "/images/products/backpacks/Adventure-Pro-70L-4.webp",
+      "/images/products/backpacks/Adventure-Pro-70L-5.webp"
+    ],
+    description: "Spacious 70L trekking backpack with load-lifter straps, ventilated suspension, and rain cover included.",
+    specifications: {
+      "Capacity": "70L",
+      "Weight": "4.5 lbs",
+      "Dimensions": "33\" x 15\" x 13\"",
+      "Material": "Ripstop Nylon",
+      "Extras": "Integrated Rain Cover"
+    },
+    rating: 5,
+    reviewCount: 112,
+    inStock: true,
+    featured: true,
+    brand: "Summit Gear"
+  },
   
   
 
