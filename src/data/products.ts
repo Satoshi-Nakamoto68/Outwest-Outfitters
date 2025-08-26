@@ -12,7 +12,8 @@ export interface Product {
   reviewCount: number;
   inStock: boolean;
   featured?: boolean;
-  brand: string;
+  // brand: string;
+  stockLevel?: number;
 }
 
 export const products: Product[] = [
@@ -46,7 +47,8 @@ export const products: Product[] = [
     reviewCount: 127,
     inStock: true,
     featured: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-002",
@@ -77,7 +79,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 89,
     inStock: true,
-    brand: "Outwest Lite"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-003",
@@ -105,7 +108,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 156,
     inStock: true,
-    brand: "Outwest Family"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-004",
@@ -135,7 +139,8 @@ export const products: Product[] = [
     reviewCount: 73,
     inStock: true,
     featured: true,
-    brand: "Outwest Extreme"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-006",
@@ -166,7 +171,8 @@ export const products: Product[] = [
     reviewCount: 92,
     inStock: true,
     featured: false,
-    brand: "TrailBound"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-007",
@@ -195,7 +201,8 @@ export const products: Product[] = [
     reviewCount: 58,
     inStock: true,
     featured: true,
-    brand: "CampVista"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-008",
@@ -229,7 +236,8 @@ export const products: Product[] = [
     reviewCount: 41,
     inStock: true,
     featured: false,
-    brand: "LightPath Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-009",
@@ -258,7 +266,8 @@ export const products: Product[] = [
     reviewCount: 77,
     inStock: true,
     featured: true,
-    brand: "SummitPro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-010",
@@ -288,7 +297,8 @@ export const products: Product[] = [
     reviewCount: 35,
     inStock: true,
     featured: false,
-    brand: "NatureNest"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-011",
@@ -318,7 +328,8 @@ export const products: Product[] = [
     reviewCount: 83,
     inStock: true,
     featured: false,
-    brand: "PeakTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-012",
@@ -347,7 +358,8 @@ export const products: Product[] = [
     reviewCount: 49,
     inStock: true,
     featured: false,
-    brand: "SunTrek"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-013",
@@ -376,7 +388,8 @@ export const products: Product[] = [
     reviewCount: 64,
     inStock: true,
     featured: true,
-    brand: "Heritage Camp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-014",
@@ -408,7 +421,8 @@ export const products: Product[] = [
     reviewCount: 52,
     inStock: true,
     featured: false,
-    brand: "WindPeak"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-015",
@@ -437,7 +451,8 @@ export const products: Product[] = [
     reviewCount: 88,
     inStock: true,
     featured: true,
-    brand: "ComfortCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-016",
@@ -464,7 +479,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 134,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-017",
@@ -492,7 +508,8 @@ export const products: Product[] = [
     reviewCount: 98,
     inStock: true,
     featured: true,
-    brand: "HighTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-018",
@@ -519,7 +536,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 73,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-019",
@@ -548,7 +566,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 102,
     inStock: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-020",
@@ -577,7 +596,8 @@ export const products: Product[] = [
     reviewCount: 44,
     inStock: true,
     featured: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-021",
@@ -604,7 +624,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 87,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-022",
@@ -632,7 +653,8 @@ export const products: Product[] = [
     reviewCount: 65,
     inStock: true,
     featured: true,
-    brand: "HighTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-023",
@@ -660,7 +682,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 89,
     inStock: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-024",
@@ -687,7 +710,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 52,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "tent-025",
@@ -715,7 +739,8 @@ export const products: Product[] = [
     reviewCount: 74,
     inStock: true,
     featured: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   
 
@@ -750,7 +775,8 @@ export const products: Product[] = [
     reviewCount: 203,
     inStock: true,
     featured: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-002",
@@ -775,7 +801,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 145,
     inStock: true,
-    brand: "Outwest Lite"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-003",
@@ -802,7 +829,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 87,
     inStock: true,
-    brand: "Outwest Classic"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-004",
@@ -828,7 +856,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 112,
     inStock: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-005",
@@ -858,7 +887,8 @@ export const products: Product[] = [
     reviewCount: 112,
     inStock: true,
     featured: false,
-    brand: "TrailBound"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-006",
@@ -888,7 +918,8 @@ export const products: Product[] = [
     reviewCount: 67,
     inStock: true,
     featured: true,
-    brand: "SummitPro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-007",
@@ -917,7 +948,8 @@ export const products: Product[] = [
     reviewCount: 88,
     inStock: true,
     featured: false,
-    brand: "CampVista"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-008",
@@ -944,7 +976,8 @@ export const products: Product[] = [
     reviewCount: 54,
     inStock: true,
     featured: true,
-    brand: "SummitPro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-009",
@@ -972,7 +1005,8 @@ export const products: Product[] = [
     reviewCount: 123,
     inStock: true,
     featured: false,
-    brand: "PeakTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-010",
@@ -1002,7 +1036,8 @@ export const products: Product[] = [
     reviewCount: 76,
     inStock: true,
     featured: false,
-    brand: "NatureNest"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-011",
@@ -1029,7 +1064,8 @@ export const products: Product[] = [
     reviewCount: 64,
     inStock: true,
     featured: true,
-    brand: "SunTrek"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-012",
@@ -1059,7 +1095,8 @@ export const products: Product[] = [
     reviewCount: 51,
     inStock: true,
     featured: false,
-    brand: "CampVista"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-013",
@@ -1091,7 +1128,8 @@ export const products: Product[] = [
     reviewCount: 73,
     inStock: true,
     featured: false,
-    brand: "Heritage Camp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-014",
@@ -1119,7 +1157,8 @@ export const products: Product[] = [
     reviewCount: 45,
     inStock: true,
     featured: true,
-    brand: "WindPeak"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-015",
@@ -1147,7 +1186,8 @@ export const products: Product[] = [
     reviewCount: 112,
     inStock: true,
     featured: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-016",
@@ -1174,7 +1214,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 89,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-017",
@@ -1199,7 +1240,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 64,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-018",
@@ -1226,7 +1268,8 @@ export const products: Product[] = [
     reviewCount: 48,
     inStock: true,
     featured: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-019",
@@ -1252,7 +1295,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 37,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-020",
@@ -1281,7 +1325,8 @@ export const products: Product[] = [
     reviewCount: 55,
     inStock: true,
     featured: true,
-    brand: "HighTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-021",
@@ -1308,7 +1353,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 102,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-022",
@@ -1334,7 +1380,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 41,
     inStock: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-023",
@@ -1360,7 +1407,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 63,
     inStock: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "sleep-024",
@@ -1386,7 +1434,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 58,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   
 
@@ -1419,7 +1468,8 @@ export const products: Product[] = [
     reviewCount: 234,
     inStock: true,
     featured: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-002",
@@ -1446,7 +1496,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 156,
     inStock: true,
-    brand: "Outwest Lite"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-003",
@@ -1473,7 +1524,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 98,
     inStock: true,
-    brand: "Outwest Lite"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-004",
@@ -1500,7 +1552,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 67,
     inStock: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-006",
@@ -1527,7 +1580,8 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 98,
     inStock: true,
-    brand: "SummitPro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-007",
@@ -1554,7 +1608,8 @@ export const products: Product[] = [
     rating: 4.6,
     reviewCount: 76,
     inStock: true,
-    brand: "TrailBound"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-008",
@@ -1581,7 +1636,8 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 84,
     inStock: true,
-    brand: "PeakTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-009",
@@ -1607,7 +1663,8 @@ export const products: Product[] = [
     rating: 4.5,
     reviewCount: 132,
     inStock: true,
-    brand: "NatureNest"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-010",
@@ -1633,7 +1690,8 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 91,
     inStock: true,
-    brand: "CampVista"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-011",
@@ -1660,7 +1718,8 @@ export const products: Product[] = [
     rating: 4.6,
     reviewCount: 58,
     inStock: true,
-    brand: "SunTrek"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-012",
@@ -1688,7 +1747,8 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 66,
     inStock: true,
-    brand: "Heritage Camp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-013",
@@ -1714,7 +1774,8 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 72,
     inStock: true,
-    brand: "Outwest Active"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-014",
@@ -1740,7 +1801,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 44,
     inStock: true,
-    brand: "SummitPro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-015",
@@ -1774,7 +1836,8 @@ export const products: Product[] = [
     reviewCount: 87,
     inStock: true,
     featured: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-016",
@@ -1800,7 +1863,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 97,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-017",
@@ -1826,7 +1890,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 88,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-018",
@@ -1853,7 +1918,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 74,
     inStock: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-019",
@@ -1879,7 +1945,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 61,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-020",
@@ -1904,7 +1971,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 102,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-021",
@@ -1931,7 +1999,8 @@ export const products: Product[] = [
     reviewCount: 47,
     inStock: true,
     featured: true,
-    brand: "HighTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-022",
@@ -1957,7 +2026,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 59,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-023",
@@ -1983,7 +2053,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 142,
     inStock: true,
-    brand: "NRS"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-024",
@@ -2009,7 +2080,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 84,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "pack-025",
@@ -2037,7 +2109,8 @@ export const products: Product[] = [
     reviewCount: 112,
     inStock: true,
     featured: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   
   
@@ -2071,7 +2144,8 @@ export const products: Product[] = [
     reviewCount: 189,
     inStock: true,
     featured: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-002",
@@ -2097,7 +2171,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 123,
     inStock: true,
-    brand: "Outwest Lite"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-003",
@@ -2123,7 +2198,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 267,
     inStock: true,
-    brand: "Outwest Pure"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-004",
@@ -2149,7 +2225,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 98,
     inStock: true,
-    brand: "Outwest Classic"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-006",
@@ -2175,7 +2252,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 112,
     inStock: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-007",
@@ -2204,7 +2282,8 @@ export const products: Product[] = [
     reviewCount: 89,
     inStock: true,
     featured: true,
-    brand: "CampMaster"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-008",
@@ -2229,7 +2308,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 76,
     inStock: true,
-    brand: "TrailLite"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-009",
@@ -2256,7 +2336,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 54,
     inStock: true,
-    brand: "EcoCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-010",
@@ -2285,7 +2366,8 @@ export const products: Product[] = [
     reviewCount: 68,
     inStock: true,
     featured: true,
-    brand: "CampMaster"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-011",
@@ -2310,7 +2392,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 134,
     inStock: true,
-    brand: "ChillPro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-012",
@@ -2335,7 +2418,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 92,
     inStock: true,
-    brand: "GrillMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-013",
@@ -2361,7 +2445,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 45,
     inStock: true,
-    brand: "TrailLite"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-014",
@@ -2387,7 +2472,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 101,
     inStock: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-015",
@@ -2413,7 +2499,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 73,
     inStock: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   
 
@@ -2446,7 +2533,8 @@ export const products: Product[] = [
     reviewCount: 178,
     inStock: true,
     featured: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-002",
@@ -2471,7 +2559,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 134,
     inStock: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-003",
@@ -2499,7 +2588,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 89,
     inStock: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-004",
@@ -2525,7 +2615,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 156,
     inStock: true,
-    brand: "Outwest Pro"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-006",
@@ -2550,7 +2641,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 112,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-007",
@@ -2579,7 +2671,8 @@ export const products: Product[] = [
     reviewCount: 95,
     inStock: true,
     featured: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-008",
@@ -2606,7 +2699,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 67,
     inStock: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-009",
@@ -2634,7 +2728,8 @@ export const products: Product[] = [
     reviewCount: 154,
     inStock: true,
     featured: true,
-    brand: "HighTrail"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-010",
@@ -2659,7 +2754,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 122,
     inStock: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-011",
@@ -2685,7 +2781,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 88,
     inStock: true,
-    brand: "TrailMate"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-012",
@@ -2715,7 +2812,8 @@ export const products: Product[] = [
     reviewCount: 76,
     inStock: true,
     featured: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-013",
@@ -2741,7 +2839,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 131,
     inStock: true,
-    brand: "RelaxOut"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-014",
@@ -2767,7 +2866,8 @@ export const products: Product[] = [
     rating: 4,
     reviewCount: 54,
     inStock: true,
-    brand: "Summit Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-015",
@@ -2796,7 +2896,8 @@ export const products: Product[] = [
     reviewCount: 61,
     inStock: true,
     featured: true,
-    brand: "ZenCamp"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   
 
@@ -2828,7 +2929,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 92,
     inStock: true,
-    brand: "Outwest Quick"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   // {
   //   id: "sleep-005",
@@ -2885,7 +2987,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 143,
     inStock: true,
-    brand: "Outwest Active"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "kitchen-005",
@@ -2911,7 +3014,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 234,
     inStock: true,
-    brand: "Outwest Gear"
+    // brand: "xxx",
+    stockLevel: 12,
   },
   {
     id: "furniture-005",
@@ -2937,7 +3041,8 @@ export const products: Product[] = [
     rating: 5,
     reviewCount: 187,
     inStock: true,
-    brand: "Outwest Comfort"
+    // brand: "xxx",
+    stockLevel: 12,
   }
 ];
 

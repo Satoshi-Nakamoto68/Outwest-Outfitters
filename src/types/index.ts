@@ -11,8 +11,9 @@ export interface Product {
   rating: number;
   reviewCount: number;
   inStock: boolean;
+  stockLevel?: number;
   featured?: boolean;
-  brand: string;
+  // brand: string;
 }
 
 export interface BlogPost {

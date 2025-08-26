@@ -344,7 +344,14 @@ const ProductDetailPage: React.FC = () => {
               {product.name}
             </h1>
 
-            <p className="text-gray-600 mb-4">{product.brand}</p>
+            {product.inStock && (product.stockLevel ?? 0) > 10 && (
+              <div className="flex items-center gap-2 text-emerald-600 font-semibold mb-4" aria-live="polite">
+                <span role="img" aria-label="in stock" className="text-lg">✅</span>
+                <span>In Stock</span>
+              </div>
+            )}
+
+            {/* <p className="text-gray-600 mb-4">{product.brand}</p> */}
 
             <div className="flex items-center space-x-4 mb-6">
               {/* <span className="text-3xl font-bold text-emerald-600">

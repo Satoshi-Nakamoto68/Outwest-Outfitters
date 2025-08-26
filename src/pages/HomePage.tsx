@@ -3,10 +3,14 @@ import Hero from "../components/Hero";
 import FeaturedProducts from "../components/FeaturedProducts";
 import Categories from "../components/Categories";
 import Newsletter from "../components/Newsletter";
+import TrustBadges from "../components/TrustBadges";
+import Testimonials from "../components/Testimonials";
 
 const HomePage: React.FC = () => {
   const featuredRef = useRef<HTMLElement>(null);
   const categoriesRef = useRef<HTMLElement>(null);
+  const trustBadgesRef = useRef<HTMLElement>(null);
+  const testimonialsRef = useRef<HTMLElement>(null);
   const aboutRef = useRef<HTMLElement>(null);
   const newsletterRef = useRef<HTMLElement>(null);
 
@@ -25,7 +29,7 @@ const HomePage: React.FC = () => {
     }, observerOptions);
 
     // Observe all sections
-    const sections = [featuredRef.current, categoriesRef.current, aboutRef.current, newsletterRef.current];
+    const sections = [trustBadgesRef.current, featuredRef.current, categoriesRef.current, testimonialsRef.current, aboutRef.current, newsletterRef.current];
     sections.forEach((section) => {
       if (section) {
         observer.observe(section);
@@ -38,6 +42,13 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Hero />
+      
+      <section
+        ref={trustBadgesRef}
+        className="py-16 bg-gray-50 opacity-0 transform translate-y-8 transition-all duration-1000 ease-out"
+      >
+        <TrustBadges />
+      </section>
       
       <section 
         ref={featuredRef}
@@ -52,6 +63,14 @@ const HomePage: React.FC = () => {
       >
         <Categories />
       </section>
+
+      <section
+        ref={testimonialsRef}
+        className="py-16 bg-white opacity-0 transform translate-y-8 transition-all duration-1000 ease-out"
+      >
+        <Testimonials />
+      </section>
+
 
       {/* About Us Snippet */}
       <section 
