@@ -46,12 +46,6 @@ const ProductsPage: React.FC = () => {
 
     // Sort products
     switch (sortBy) {
-      case "price-low":
-        filtered.sort((a, b) => a.price - b.price);
-        break;
-      case "price-high":
-        filtered.sort((a, b) => b.price - a.price);
-        break;
       case "rating":
         filtered.sort((a, b) => b.rating - a.rating);
         break;
@@ -250,8 +244,6 @@ const ProductsPage: React.FC = () => {
                       className="border border-gray-300 rounded-md px-3 py-1 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     >
                       <option value="featured">Featured</option>
-                      <option value="price-low">Price: Low to High</option>
-                      <option value="price-high">Price: High to Low</option>
                       <option value="rating">Highest Rated</option>
                       <option value="name">Name</option>
                     </select>

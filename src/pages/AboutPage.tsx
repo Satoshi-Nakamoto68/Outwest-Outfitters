@@ -204,8 +204,12 @@ const AboutPage: React.FC = () => {
 
           <div className="bg-emerald-50 rounded-xl p-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-48 h-48 bg-emerald-200 rounded-full flex items-center justify-center">
-                <Users className="h-24 w-24 text-emerald-600" />
+              <div className="w-48 h-48 rounded-full overflow-hidden">
+                <img
+                  src="/images/avatars/hank-bunting.jpg"
+                  alt="Hank Bunting - Founder of Outwest Outfitters"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
